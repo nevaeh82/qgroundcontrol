@@ -24,6 +24,7 @@
 #include <QUdpSocket>
 #include <QtPlugin>
 #include <QStringListModel>
+#include <QTranslator>
 #include "QGCApplication.h"
 #include "AppMessages.h"
 
@@ -208,6 +209,10 @@ int main(int argc, char *argv[])
 
     QGCApplication* app = new QGCApplication(argc, argv, runUnitTests);
     Q_CHECK_PTR(app);
+
+    QTranslator translator;
+    translator.load(QString("qgc_") + QString("ru_RU"), QString("localization"));
+    qApp->installTranslator(&translator);
 
 #ifdef Q_OS_LINUX
     QApplication::setWindowIcon(QIcon(":/res/resources/icons/qgroundcontrol.ico"));
