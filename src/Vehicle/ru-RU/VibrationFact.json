@@ -1,0 +1,35 @@
+[
+{
+    "name":             "xAxis",
+    "shortDescription": "Вибр Ось Х",
+    "type":             "double",
+    "decimalPlaces":    1
+},
+{
+    "name":             "yAxis",
+    "shortDescription": "Вибр ось У",
+    "type":             "double",
+    "decimalPlaces":    1
+},
+{
+    "name":             "zAxis",
+    "shortDescription": "Вибр ось Z",
+    "type":             "double",
+    "decimalPlaces":    1
+},
+{
+    "name":             "clipCount1",
+    "shortDescription": "Кол клипов (1)",
+    "type":             "uint32"
+},
+{
+    "name":             "clipCount2",
+    "shortDescription": "Кол клипов (2)",
+    "type":             "uint32"
+},
+{
+    "name":             "clipCount3",
+    "shortDescription": "Кол клипов (3)",
+    "type":             "uint32"
+}
+]

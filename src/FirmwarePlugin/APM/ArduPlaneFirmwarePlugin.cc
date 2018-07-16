@@ -16,25 +16,25 @@ APMPlaneMode::APMPlaneMode(uint32_t mode, bool settable)
     : APMCustomMode(mode, settable)
 {
     QMap<uint32_t,QString> enumToString;
-    enumToString.insert(MANUAL,         "Manual");
-    enumToString.insert(CIRCLE,         "Circle");
-    enumToString.insert(STABILIZE,      "Stabilize");
-    enumToString.insert(TRAINING,       "Training");
-    enumToString.insert(ACRO,           "Acro");
-    enumToString.insert(FLY_BY_WIRE_A,  "FBW A");
-    enumToString.insert(FLY_BY_WIRE_B,  "FBW B");
-    enumToString.insert(CRUISE,         "Cruise");
-    enumToString.insert(AUTOTUNE,       "Autotune");
-    enumToString.insert(AUTO,           "Auto");
-    enumToString.insert(RTL,            "RTL");
-    enumToString.insert(LOITER,         "Loiter");
-    enumToString.insert(GUIDED,         "Guided");
-    enumToString.insert(INITIALIZING,   "Initializing");
-    enumToString.insert(QSTABILIZE,     "QuadPlane Stabilize");
-    enumToString.insert(QHOVER,         "QuadPlane Hover");
-    enumToString.insert(QLOITER,        "QuadPlane Loiter");
-    enumToString.insert(QLAND,          "QuadPlane Land");
-    enumToString.insert(QRTL,           "QuadPlane RTL");
+    enumToString.insert(MANUAL,         QObject::tr("Manual"));
+    enumToString.insert(CIRCLE,         QObject::tr("Circle"));
+    enumToString.insert(STABILIZE,      QObject::tr("Stabilize"));
+    enumToString.insert(TRAINING,       QObject::tr("Training"));
+    enumToString.insert(ACRO,           QObject::tr("Acro"));
+    enumToString.insert(FLY_BY_WIRE_A,  QObject::tr("FBW A"));
+    enumToString.insert(FLY_BY_WIRE_B,  QObject::tr("FBW B"));
+    enumToString.insert(CRUISE,         QObject::tr("Cruise"));
+    enumToString.insert(AUTOTUNE,       QObject::tr("Autotune"));
+    enumToString.insert(AUTO,           QObject::tr("Auto"));
+    enumToString.insert(RTL,            QObject::tr("RTL"));
+    enumToString.insert(LOITER,         QObject::tr("Loiter"));
+    enumToString.insert(GUIDED,         QObject::tr("Guided"));
+    enumToString.insert(INITIALIZING,   QObject::tr("Initializing"));
+    enumToString.insert(QSTABILIZE,     QObject::tr("QuadPlane Stabilize"));
+    enumToString.insert(QHOVER,         QObject::tr("QuadPlane Hover"));
+    enumToString.insert(QLOITER,        QObject::tr("QuadPlane Loiter"));
+    enumToString.insert(QLAND,          QObject::tr("QuadPlane Land"));
+    enumToString.insert(QRTL,           QObject::tr("QuadPlane RTL"));
 
     setEnumToStringMapping(enumToString);
 }

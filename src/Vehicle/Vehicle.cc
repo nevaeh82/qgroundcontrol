@@ -48,34 +48,34 @@ QGC_LOGGING_CATEGORY(VehicleLog, "VehicleLog")
 
 const QString guided_mode_not_supported_by_vehicle = QObject::tr("Guided mode not supported by Vehicle.");
 
-const char* Vehicle::_settingsGroup =               "Vehicle%1";        // %1 replaced with mavlink system id
-const char* Vehicle::_joystickModeSettingsKey =     "JoystickMode";
-const char* Vehicle::_joystickEnabledSettingsKey =  "JoystickEnabled";
+const char* Vehicle::_settingsGroup =               QT_TR_NOOP("Vehicle%1");        // %1 replaced with mavlink system id
+const char* Vehicle::_joystickModeSettingsKey =     QT_TR_NOOP("JoystickMode");
+const char* Vehicle::_joystickEnabledSettingsKey =  QT_TR_NOOP("JoystickEnabled");
 
-const char* Vehicle::_rollFactName =                "roll";
-const char* Vehicle::_pitchFactName =               "pitch";
-const char* Vehicle::_headingFactName =             "heading";
-const char* Vehicle::_rollRateFactName =             "rollRate";
-const char* Vehicle::_pitchRateFactName =           "pitchRate";
-const char* Vehicle::_yawRateFactName =             "yawRate";
-const char* Vehicle::_airSpeedFactName =            "airSpeed";
-const char* Vehicle::_groundSpeedFactName =         "groundSpeed";
-const char* Vehicle::_climbRateFactName =           "climbRate";
-const char* Vehicle::_altitudeRelativeFactName =    "altitudeRelative";
-const char* Vehicle::_altitudeAMSLFactName =        "altitudeAMSL";
-const char* Vehicle::_flightDistanceFactName =      "flightDistance";
-const char* Vehicle::_flightTimeFactName =          "flightTime";
-const char* Vehicle::_distanceToHomeFactName =      "distanceToHome";
-const char* Vehicle::_hobbsFactName =               "hobbs";
+const char* Vehicle::_rollFactName =                QT_TR_NOOP("roll");
+const char* Vehicle::_pitchFactName =               QT_TR_NOOP("pitch");
+const char* Vehicle::_headingFactName =             QT_TR_NOOP("heading");
+const char* Vehicle::_rollRateFactName =            QT_TR_NOOP("rollRate");
+const char* Vehicle::_pitchRateFactName =           QT_TR_NOOP("pitchRate");
+const char* Vehicle::_yawRateFactName =             QT_TR_NOOP("yawRate");
+const char* Vehicle::_airSpeedFactName =            QT_TR_NOOP("airSpeed");
+const char* Vehicle::_groundSpeedFactName =         QT_TR_NOOP("groundSpeed");
+const char* Vehicle::_climbRateFactName =           QT_TR_NOOP("climbRate");
+const char* Vehicle::_altitudeRelativeFactName =    QT_TR_NOOP("altitudeRelative");
+const char* Vehicle::_altitudeAMSLFactName =        QT_TR_NOOP("altitudeAMSL");
+const char* Vehicle::_flightDistanceFactName =      QT_TR_NOOP("flightDistance");
+const char* Vehicle::_flightTimeFactName =          QT_TR_NOOP("flightTime");
+const char* Vehicle::_distanceToHomeFactName =      QT_TR_NOOP("distanceToHome");
+const char* Vehicle::_hobbsFactName =               QT_TR_NOOP("hobbs");
 
-const char* Vehicle::_gpsFactGroupName =            "gps";
-const char* Vehicle::_battery1FactGroupName =       "battery";
-const char* Vehicle::_battery2FactGroupName =       "battery2";
-const char* Vehicle::_windFactGroupName =           "wind";
-const char* Vehicle::_vibrationFactGroupName =      "vibration";
-const char* Vehicle::_temperatureFactGroupName =    "temperature";
-const char* Vehicle::_clockFactGroupName =          "clock";
-const char* Vehicle::_distanceSensorFactGroupName = "distanceSensor";
+const char* Vehicle::_gpsFactGroupName =            QT_TR_NOOP("gps");
+const char* Vehicle::_battery1FactGroupName =       QT_TR_NOOP("battery");
+const char* Vehicle::_battery2FactGroupName =       QT_TR_NOOP("battery2");
+const char* Vehicle::_windFactGroupName =           QT_TR_NOOP("wind");
+const char* Vehicle::_vibrationFactGroupName =      QT_TR_NOOP("vibration");
+const char* Vehicle::_temperatureFactGroupName =    QT_TR_NOOP("temperature");
+const char* Vehicle::_clockFactGroupName =          QT_TR_NOOP("clock");
+const char* Vehicle::_distanceSensorFactGroupName = QT_TR_NOOP("distanceSensor");
 
 Vehicle::Vehicle(LinkInterface*             link,
                  int                        vehicleId,
@@ -84,7 +84,7 @@ Vehicle::Vehicle(LinkInterface*             link,
                  MAV_TYPE                   vehicleType,
                  FirmwarePluginManager*     firmwarePluginManager,
                  JoystickManager*           joystickManager)
-    : FactGroup(_vehicleUIUpdateRateMSecs, ":/json/Vehicle/VehicleFact.json")
+    : FactGroup(_vehicleUIUpdateRateMSecs, ":/json/Vehicle/ru-RU/VehicleFact.json")
     , _id(vehicleId)
     , _defaultComponentId(defaultComponentId)
     , _active(false)
@@ -277,7 +277,7 @@ Vehicle::Vehicle(MAV_AUTOPILOT              firmwareType,
                  MAV_TYPE                   vehicleType,
                  FirmwarePluginManager*     firmwarePluginManager,
                  QObject*                   parent)
-    : FactGroup(_vehicleUIUpdateRateMSecs, ":/json/Vehicle/VehicleFact.json", parent)
+    : FactGroup(_vehicleUIUpdateRateMSecs, ":/json/Vehicle/ru-RU/VehicleFact.json", parent)
     , _id(0)
     , _defaultComponentId(MAV_COMP_ID_ALL)
     , _active(false)
@@ -3184,32 +3184,32 @@ QStringList Vehicle::unhealthySensors(void) const
     };
 
     static const sensorInfo_s rgSensorInfo[] = {
-        { MAV_SYS_STATUS_SENSOR_3D_GYRO,                "Gyro" },
-        { MAV_SYS_STATUS_SENSOR_3D_ACCEL,               "Accelerometer" },
-        { MAV_SYS_STATUS_SENSOR_3D_MAG,                 "Magnetometer" },
-        { MAV_SYS_STATUS_SENSOR_ABSOLUTE_PRESSURE,      "Absolute pressure" },
-        { MAV_SYS_STATUS_SENSOR_DIFFERENTIAL_PRESSURE,  "Differential pressure" },
-        { MAV_SYS_STATUS_SENSOR_GPS,                    "GPS" },
-        { MAV_SYS_STATUS_SENSOR_OPTICAL_FLOW,           "Optical flow" },
-        { MAV_SYS_STATUS_SENSOR_VISION_POSITION,        "Computer vision position" },
-        { MAV_SYS_STATUS_SENSOR_LASER_POSITION,         "Laser based position" },
-        { MAV_SYS_STATUS_SENSOR_EXTERNAL_GROUND_TRUTH,  "External ground truth" },
-        { MAV_SYS_STATUS_SENSOR_ANGULAR_RATE_CONTROL,   "Angular rate control" },
-        { MAV_SYS_STATUS_SENSOR_ATTITUDE_STABILIZATION, "Attitude stabilization" },
-        { MAV_SYS_STATUS_SENSOR_YAW_POSITION,           "Yaw position" },
-        { MAV_SYS_STATUS_SENSOR_Z_ALTITUDE_CONTROL,     "Z/altitude control" },
-        { MAV_SYS_STATUS_SENSOR_XY_POSITION_CONTROL,    "X/Y position control" },
-        { MAV_SYS_STATUS_SENSOR_MOTOR_OUTPUTS,          "Motor outputs / control" },
-        { MAV_SYS_STATUS_SENSOR_RC_RECEIVER,            "RC receiver" },
-        { MAV_SYS_STATUS_SENSOR_3D_GYRO2,               "Gyro 2" },
-        { MAV_SYS_STATUS_SENSOR_3D_ACCEL2,              "Accelerometer 2" },
-        { MAV_SYS_STATUS_SENSOR_3D_MAG2,                "Magnetometer 2" },
-        { MAV_SYS_STATUS_GEOFENCE,                      "GeoFence" },
-        { MAV_SYS_STATUS_AHRS,                          "AHRS" },
-        { MAV_SYS_STATUS_TERRAIN,                       "Terrain" },
-        { MAV_SYS_STATUS_REVERSE_MOTOR,                 "Motors reversed" },
-        { MAV_SYS_STATUS_LOGGING,                       "Logging" },
-        { MAV_SYS_STATUS_SENSOR_BATTERY,                "Battery" },
+        { MAV_SYS_STATUS_SENSOR_3D_GYRO,                QT_TR_NOOP("Gyro") },
+        { MAV_SYS_STATUS_SENSOR_3D_ACCEL,               QT_TR_NOOP("Accelerometer") },
+        { MAV_SYS_STATUS_SENSOR_3D_MAG,                 QT_TR_NOOP("Magnetometer") },
+        { MAV_SYS_STATUS_SENSOR_ABSOLUTE_PRESSURE,      QT_TR_NOOP("Absolute pressure") },
+        { MAV_SYS_STATUS_SENSOR_DIFFERENTIAL_PRESSURE,  QT_TR_NOOP("Differential pressure") },
+        { MAV_SYS_STATUS_SENSOR_GPS,                    QT_TR_NOOP("GPS") },
+        { MAV_SYS_STATUS_SENSOR_OPTICAL_FLOW,           QT_TR_NOOP("Optical flow") },
+        { MAV_SYS_STATUS_SENSOR_VISION_POSITION,        QT_TR_NOOP("Computer vision position") },
+        { MAV_SYS_STATUS_SENSOR_LASER_POSITION,         QT_TR_NOOP("Laser based position") },
+        { MAV_SYS_STATUS_SENSOR_EXTERNAL_GROUND_TRUTH,  QT_TR_NOOP("External ground truth") },
+        { MAV_SYS_STATUS_SENSOR_ANGULAR_RATE_CONTROL,   QT_TR_NOOP("Angular rate control") },
+        { MAV_SYS_STATUS_SENSOR_ATTITUDE_STABILIZATION, QT_TR_NOOP("Attitude stabilization") },
+        { MAV_SYS_STATUS_SENSOR_YAW_POSITION,           QT_TR_NOOP("Yaw position") },
+        { MAV_SYS_STATUS_SENSOR_Z_ALTITUDE_CONTROL,     QT_TR_NOOP("Z/altitude control") },
+        { MAV_SYS_STATUS_SENSOR_XY_POSITION_CONTROL,    QT_TR_NOOP("X/Y position control") },
+        { MAV_SYS_STATUS_SENSOR_MOTOR_OUTPUTS,          QT_TR_NOOP("Motor outputs / control") },
+        { MAV_SYS_STATUS_SENSOR_RC_RECEIVER,            QT_TR_NOOP("RC receiver") },
+        { MAV_SYS_STATUS_SENSOR_3D_GYRO2,               QT_TR_NOOP("Gyro 2") },
+        { MAV_SYS_STATUS_SENSOR_3D_ACCEL2,              QT_TR_NOOP("Accelerometer 2") },
+        { MAV_SYS_STATUS_SENSOR_3D_MAG2,                QT_TR_NOOP("Magnetometer 2") },
+        { MAV_SYS_STATUS_GEOFENCE,                      QT_TR_NOOP("GeoFence") },
+        { MAV_SYS_STATUS_AHRS,                          QT_TR_NOOP("AHRS") },
+        { MAV_SYS_STATUS_TERRAIN,                       QT_TR_NOOP("Terrain") },
+        { MAV_SYS_STATUS_REVERSE_MOTOR,                 QT_TR_NOOP("Motors reversed") },
+        { MAV_SYS_STATUS_LOGGING,                       QT_TR_NOOP("Logging") },
+        { MAV_SYS_STATUS_SENSOR_BATTERY,                QT_TR_NOOP("Battery") },
     };
 
     for (size_t i=0; i<sizeof(rgSensorInfo)/sizeof(sensorInfo_s); i++) {
@@ -3262,7 +3262,7 @@ const char* VehicleGPSFactGroup::_countFactName =               "count";
 const char* VehicleGPSFactGroup::_lockFactName =                "lock";
 
 VehicleGPSFactGroup::VehicleGPSFactGroup(QObject* parent)
-    : FactGroup(1000, ":/json/Vehicle/GPSFact.json", parent)
+    : FactGroup(1000, ":/json/Vehicle/ru-RU/GPSFact.json", parent)
     , _latFact              (0, _latFactName,               FactMetaData::valueTypeDouble)
     , _lonFact              (0, _lonFactName,               FactMetaData::valueTypeDouble)
     , _hdopFact             (0, _hdopFactName,              FactMetaData::valueTypeDouble)
@@ -3554,7 +3554,7 @@ const int    VehicleBatteryFactGroup::_cellCountUnavailable =         -1.0;
 const double VehicleBatteryFactGroup::_instantPowerUnavailable =      -1.0;
 
 VehicleBatteryFactGroup::VehicleBatteryFactGroup(QObject* parent)
-    : FactGroup(1000, ":/json/Vehicle/BatteryFact.json", parent)
+    : FactGroup(1000, ":/json/Vehicle/ru-RU/BatteryFact.json", parent)
     , _voltageFact                  (0, _voltageFactName,                   FactMetaData::valueTypeDouble)
     , _percentRemainingFact         (0, _percentRemainingFactName,          FactMetaData::valueTypeInt32)
     , _mahConsumedFact              (0, _mahConsumedFactName,               FactMetaData::valueTypeInt32)
@@ -3590,7 +3590,7 @@ const char* VehicleWindFactGroup::_speedFactName =          "speed";
 const char* VehicleWindFactGroup::_verticalSpeedFactName =  "verticalSpeed";
 
 VehicleWindFactGroup::VehicleWindFactGroup(QObject* parent)
-    : FactGroup(1000, ":/json/Vehicle/WindFact.json", parent)
+    : FactGroup(1000, ":/json/Vehicle/ru-RU/WindFact.json", parent)
     , _directionFact    (0, _directionFactName,     FactMetaData::valueTypeDouble)
     , _speedFact        (0, _speedFactName,         FactMetaData::valueTypeDouble)
     , _verticalSpeedFact(0, _verticalSpeedFactName, FactMetaData::valueTypeDouble)
@@ -3613,7 +3613,7 @@ const char* VehicleVibrationFactGroup::_clipCount2FactName = "clipCount2";
 const char* VehicleVibrationFactGroup::_clipCount3FactName = "clipCount3";
 
 VehicleVibrationFactGroup::VehicleVibrationFactGroup(QObject* parent)
-    : FactGroup(1000, ":/json/Vehicle/VibrationFact.json", parent)
+    : FactGroup(1000, ":/json/Vehicle/ru-RU/VibrationFact.json", parent)
     , _xAxisFact        (0, _xAxisFactName,         FactMetaData::valueTypeDouble)
     , _yAxisFact        (0, _yAxisFactName,         FactMetaData::valueTypeDouble)
     , _zAxisFact        (0, _zAxisFactName,         FactMetaData::valueTypeDouble)
@@ -3639,7 +3639,7 @@ const char* VehicleTemperatureFactGroup::_temperature2FactName =      "temperatu
 const char* VehicleTemperatureFactGroup::_temperature3FactName =      "temperature3";
 
 VehicleTemperatureFactGroup::VehicleTemperatureFactGroup(QObject* parent)
-    : FactGroup(1000, ":/json/Vehicle/TemperatureFact.json", parent)
+    : FactGroup(1000, ":/json/Vehicle/ru-RU/TemperatureFact.json", parent)
     , _temperature1Fact    (0, _temperature1FactName,     FactMetaData::valueTypeDouble)
     , _temperature2Fact    (0, _temperature2FactName,     FactMetaData::valueTypeDouble)
     , _temperature3Fact    (0, _temperature3FactName,     FactMetaData::valueTypeDouble)
@@ -3658,7 +3658,7 @@ const char* VehicleClockFactGroup::_currentTimeFactName = "currentTime";
 const char* VehicleClockFactGroup::_currentDateFactName = "currentDate";
 
 VehicleClockFactGroup::VehicleClockFactGroup(QObject* parent)
-    : FactGroup(1000, ":/json/Vehicle/ClockFact.json", parent)
+    : FactGroup(1000, ":/json/Vehicle/ru-RU/ClockFact.json", parent)
     , _currentTimeFact  (0, _currentTimeFactName,    FactMetaData::valueTypeString)
     , _currentDateFact  (0, _currentDateFactName,    FactMetaData::valueTypeString)
 {
@@ -3686,7 +3686,7 @@ const char* VehicleSetpointFactGroup::_pitchRateFactName =  "pitchRate";
 const char* VehicleSetpointFactGroup::_yawRateFactName =    "yawRate";
 
 VehicleSetpointFactGroup::VehicleSetpointFactGroup(QObject* parent)
-    : FactGroup     (1000, ":/json/Vehicle/SetpointFact.json", parent)
+    : FactGroup     (1000, ":/json/Vehicle/ru-RU/SetpointFact.json", parent)
     , _rollFact     (0, _rollFactName,      FactMetaData::valueTypeDouble)
     , _pitchFact    (0, _pitchFactName,     FactMetaData::valueTypeDouble)
     , _yawFact      (0, _yawFactName,       FactMetaData::valueTypeDouble)
@@ -3722,7 +3722,7 @@ const char* VehicleDistanceSensorFactGroup::_rotationPitch90FactName =  "rotatio
 const char* VehicleDistanceSensorFactGroup::_rotationPitch270FactName = "rotationPitch270";
 
 VehicleDistanceSensorFactGroup::VehicleDistanceSensorFactGroup(QObject* parent)
-    : FactGroup             (1000, ":/json/Vehicle/DistanceSensorFact.json", parent)
+    : FactGroup             (1000, ":/json/Vehicle/ru-RU/DistanceSensorFact.json", parent)
     , _rotationNoneFact     (0, _rotationNoneFactName,      FactMetaData::valueTypeDouble)
     , _rotationYaw45Fact    (0, _rotationYaw45FactName,     FactMetaData::valueTypeDouble)
     , _rotationYaw90Fact    (0, _rotationYaw90FactName,     FactMetaData::valueTypeDouble)

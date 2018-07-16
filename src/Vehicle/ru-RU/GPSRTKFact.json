@@ -1,0 +1,36 @@
+[
+{
+    "name":             "connected",
+    "shortDescription": "Подключено",
+    "type":             "bool"
+},
+{
+    "name":             "currentAccuracy",
+    "shortDescription": "Тек точность",
+    "type":             "double",
+    "decimalPlaces":    1,
+    "units":            "м"
+},
+{
+    "name":             "currentDuration",
+    "shortDescription": "Тек продолжительность",
+    "type":             "double",
+    "decimalPlaces":    0,
+    "units":            "с"
+},
+{
+    "name":             "valid",
+    "shortDescription": "Обзор-доступен",
+    "type":             "bool"
+},
+{
+    "name":             "active",
+    "shortDescription": "Обзор-активен",
+    "type":             "bool"
+},
+{
+    "name":             "numSatellites",
+    "shortDescription": "Количество спутников",
+    "type":             "int32"
+}
+]

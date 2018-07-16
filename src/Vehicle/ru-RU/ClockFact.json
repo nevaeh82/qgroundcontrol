@@ -1,0 +1,12 @@
+[
+{
+    "name":             "currentTime",
+    "shortDescription": "Время",
+    "type":             "string"
+},
+{
+    "name":             "currentDate",
+    "shortDescription": "Дата",
+    "type":             "string"
+}
+]

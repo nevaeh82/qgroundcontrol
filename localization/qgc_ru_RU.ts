@@ -1137,7 +1137,7 @@
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="455"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="455"/>
         <source>Altitude GeoFence enabled</source>
-        <translation>Включена высота геозоны </translation>
+        <translation>Включена высота геозоны</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="480"/>
@@ -4534,6 +4534,31 @@ propellers on the green thrusters and counter-clockwise propellers on the blue t
 <context>
     <name>FirmwarePlugin</name>
     <message>
+        <location filename="../src/FirmwarePlugin/FirmwarePlugin.cc" line="76"/>
+        <source>Manual</source>
+        <translation>Ручное</translation>
+    </message>
+    <message>
+        <location filename="../src/FirmwarePlugin/FirmwarePlugin.cc" line="77"/>
+        <source>Stabilize</source>
+        <translation>Стабилизироваться</translation>
+    </message>
+    <message>
+        <location filename="../src/FirmwarePlugin/FirmwarePlugin.cc" line="78"/>
+        <source>Guided</source>
+        <translation>Управляемо</translation>
+    </message>
+    <message>
+        <location filename="../src/FirmwarePlugin/FirmwarePlugin.cc" line="79"/>
+        <source>Auto</source>
+        <translation>Авто</translation>
+    </message>
+    <message>
+        <location filename="../src/FirmwarePlugin/FirmwarePlugin.cc" line="80"/>
+        <source>Test</source>
+        <translation>Тест</translation>
+    </message>
+    <message>
         <location filename="../src/FirmwarePlugin/FirmwarePlugin.cc" line="353"/>
         <source>Sony NEX-5R 20mm</source>
         <translation>Sony NEX-5R 20 мм</translation>
@@ -7456,7 +7481,7 @@ Click the Next button to upload calibration to board. Click Cancel if you don&ap
     <message>
         <location filename="../src/MissionManager/MissionManager.cc" line="91"/>
         <source>Unable to generate resume mission due to MAV_CMD_DO_JUMP command.</source>
-        <translation>Не возможно создать возобновление миссии из-за команды MAV_CMD_DO_JUMP. </translation>
+        <translation>Не возможно создать возобновление миссии из-за команды MAV_CMD_DO_JUMP.</translation>
     </message>
 </context>
 <context>
@@ -8080,13 +8105,13 @@ Is this really what you want?</source>
         <location filename="../src/AutoPilotPlugins/PX4/PX4AdvancedFlightModes.qml" line="40"/>
         <location filename="../src/AutoPilotPlugins/PX4/PX4AdvancedFlightModes.qml" line="40"/>
         <source>Assign Flight Modes to radio control channels and adjust the thresholds for triggering them. </source>
-        <translation>Назначить Режимам Полета каналы пульта управления и подогнать пороговые значения для них.</translation>
+        <translation>Назначить Режимам Полета каналы пульта управления и подогнать пороговые значения для них. </translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PX4AdvancedFlightModes.qml" line="41"/>
         <location filename="../src/AutoPilotPlugins/PX4/PX4AdvancedFlightModes.qml" line="41"/>
         <source>You can assign multiple flight modes to a single channel. </source>
-        <translation>Вы можете назначить нескольки режимов полета на один канал.   </translation>
+        <translation>Вы можете назначить нескольки режимов полета на один канал. </translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PX4AdvancedFlightModes.qml" line="42"/>
@@ -8136,7 +8161,7 @@ Is this really what you want?</source>
         <location filename="../src/AutoPilotPlugins/PX4/PX4AdvancedFlightModes.qml" line="50"/>
         <location filename="../src/AutoPilotPlugins/PX4/PX4AdvancedFlightModes.qml" line="50"/>
         <source>The pilot has full control of the aircraft, only attitude is stabilized. </source>
-        <translation>Пилот имеет полный контроль над самолетом, стабилизируется только высота.  </translation>
+        <translation>Пилот имеет полный контроль над самолетом, стабилизируется только высота. </translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PX4AdvancedFlightModes.qml" line="53"/>
@@ -8190,13 +8215,13 @@ Is this really what you want?</source>
         <location filename="../src/AutoPilotPlugins/PX4/PX4AdvancedFlightModes.qml" line="63"/>
         <location filename="../src/AutoPilotPlugins/PX4/PX4AdvancedFlightModes.qml" line="63"/>
         <source>Roll/pitch angles and rudder deflection are controlled. </source>
-        <translation>Углы крена/тангажа и направления контролируются.    </translation>
+        <translation>Углы крена/тангажа и направления контролируются. </translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PX4AdvancedFlightModes.qml" line="64"/>
         <location filename="../src/AutoPilotPlugins/PX4/PX4AdvancedFlightModes.qml" line="64"/>
         <source>The angular rates are controlled, but not the attitude. </source>
-        <translation>Угловая скорость контролируется, но не высота.  </translation>
+        <translation>Угловая скорость контролируется, но не высота. </translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PX4AdvancedFlightModes.qml" line="66"/>
@@ -8244,7 +8269,7 @@ Is this really what you want?</source>
         <location filename="../src/AutoPilotPlugins/PX4/PX4AdvancedFlightModes.qml" line="74"/>
         <location filename="../src/AutoPilotPlugins/PX4/PX4AdvancedFlightModes.qml" line="74"/>
         <source>Throttle stick controls speed.</source>
-        <translation>Джойстик Газа контролирует скорость. </translation>
+        <translation>Джойстик Газа контролирует скорость.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PX4AdvancedFlightModes.qml" line="75"/>
@@ -8805,7 +8830,7 @@ Is this really what you want?</source>
         <location filename="../src/AutoPilotPlugins/PX4/PX4TuningComponentVTOL.qml" line="31"/>
         <location filename="../src/AutoPilotPlugins/PX4/PX4TuningComponentVTOL.qml" line="31"/>
         <source>Slide to the left to make roll control faster and more accurate. Slide to the right if roll oscillates or is too twitchy.</source>
-        <translation>Потяните влево чтобы контролировать крен быстрее и более аккуратно. Потяните вправо, если крен качается или слишком дергается. </translation>
+        <translation>Потяните влево чтобы контролировать крен быстрее и более аккуратно. Потяните вправо, если крен качается или слишком дергается.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PX4TuningComponentVTOL.qml" line="39"/>
@@ -9423,7 +9448,7 @@ Is this really what you want?</source>
     <message>
         <location filename="../src/PlanView/PlanView.qml" line="187"/>
         <source>Select Plan File</source>
-        <translation>Выберите файл Плана </translation>
+        <translation>Выберите файл Плана</translation>
     </message>
     <message>
         <location filename="../src/PlanView/PlanView.qml" line="201"/>
@@ -10296,7 +10321,7 @@ sudo apt-get remove modemmanager</translation>
     <message>
         <location filename="../src/api/QGCCorePlugin.cc" line="154"/>
         <source>Values</source>
-        <translation>Значения</translation>
+        <translation>Данные</translation>
     </message>
     <message>
         <location filename="../src/api/QGCCorePlugin.cc" line="155"/>
@@ -11465,6 +11490,181 @@ Errors:
         <location filename="../src/FirmwarePlugin/FirmwarePlugin.cc" line="25"/>
         <source>Follow Me</source>
         <translation>Следуй за мной</translation>
+    </message>
+    <message>
+        <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.cc" line="26"/>
+        <location filename="../src/FirmwarePlugin/APM/ArduPlaneFirmwarePlugin.cc" line="21"/>
+        <location filename="../src/FirmwarePlugin/APM/ArduSubFirmwarePlugin.cc" line="37"/>
+        <source>Stabilize</source>
+        <translation>Стабилизироваться</translation>
+    </message>
+    <message>
+        <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.cc" line="27"/>
+        <location filename="../src/FirmwarePlugin/APM/ArduPlaneFirmwarePlugin.cc" line="23"/>
+        <location filename="../src/FirmwarePlugin/APM/ArduSubFirmwarePlugin.cc" line="38"/>
+        <source>Acro</source>
+        <translation>Акро</translation>
+    </message>
+    <message>
+        <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.cc" line="28"/>
+        <source>Altitude Hold</source>
+        <translation>Удерание высоты</translation>
+    </message>
+    <message>
+        <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.cc" line="29"/>
+        <location filename="../src/FirmwarePlugin/APM/ArduPlaneFirmwarePlugin.cc" line="28"/>
+        <location filename="../src/FirmwarePlugin/APM/ArduSubFirmwarePlugin.cc" line="40"/>
+        <source>Auto</source>
+        <translation>Авто</translation>
+    </message>
+    <message>
+        <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.cc" line="30"/>
+        <location filename="../src/FirmwarePlugin/APM/ArduPlaneFirmwarePlugin.cc" line="31"/>
+        <location filename="../src/FirmwarePlugin/APM/ArduSubFirmwarePlugin.cc" line="41"/>
+        <source>Guided</source>
+        <translation>Управляемо</translation>
+    </message>
+    <message>
+        <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.cc" line="31"/>
+        <location filename="../src/FirmwarePlugin/APM/ArduPlaneFirmwarePlugin.cc" line="30"/>
+        <source>Loiter</source>
+        <translation>Барражировать</translation>
+    </message>
+    <message>
+        <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.cc" line="32"/>
+        <location filename="../src/FirmwarePlugin/APM/ArduPlaneFirmwarePlugin.cc" line="29"/>
+        <source>RTL</source>
+        <translation>RTL</translation>
+    </message>
+    <message>
+        <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.cc" line="33"/>
+        <location filename="../src/FirmwarePlugin/APM/ArduPlaneFirmwarePlugin.cc" line="20"/>
+        <location filename="../src/FirmwarePlugin/APM/ArduSubFirmwarePlugin.cc" line="42"/>
+        <source>Circle</source>
+        <translation>Круг</translation>
+    </message>
+    <message>
+        <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.cc" line="34"/>
+        <source>Land</source>
+        <translation>Посадка</translation>
+    </message>
+    <message>
+        <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.cc" line="35"/>
+        <source>Drift</source>
+        <translation>Дрейф</translation>
+    </message>
+    <message>
+        <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.cc" line="36"/>
+        <source>Sport</source>
+        <translation>Спорт</translation>
+    </message>
+    <message>
+        <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.cc" line="37"/>
+        <source>Flip</source>
+        <translation>Перевернуть</translation>
+    </message>
+    <message>
+        <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.cc" line="38"/>
+        <location filename="../src/FirmwarePlugin/APM/ArduPlaneFirmwarePlugin.cc" line="27"/>
+        <source>Autotune</source>
+        <translation>Автоподстройка</translation>
+    </message>
+    <message>
+        <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.cc" line="39"/>
+        <location filename="../src/FirmwarePlugin/APM/ArduSubFirmwarePlugin.cc" line="44"/>
+        <source>Position Hold</source>
+        <translation>Удержание позиции</translation>
+    </message>
+    <message>
+        <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.cc" line="40"/>
+        <source>Brake</source>
+        <translation>Тормоз</translation>
+    </message>
+    <message>
+        <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.cc" line="41"/>
+        <source>Throw</source>
+        <translation>Бросок</translation>
+    </message>
+    <message>
+        <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.cc" line="42"/>
+        <source>Avoid ADSB</source>
+        <translation>Избегать ADSB</translation>
+    </message>
+    <message>
+        <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.cc" line="43"/>
+        <source>Guided No GPS</source>
+        <translation>Управление без GPS</translation>
+    </message>
+    <message>
+        <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.cc" line="44"/>
+        <source>Smart RTL</source>
+        <translation>Умный RTL</translation>
+    </message>
+    <message>
+        <location filename="../src/FirmwarePlugin/APM/ArduPlaneFirmwarePlugin.cc" line="19"/>
+        <location filename="../src/FirmwarePlugin/APM/ArduSubFirmwarePlugin.cc" line="36"/>
+        <source>Manual</source>
+        <translation>Ручное</translation>
+    </message>
+    <message>
+        <location filename="../src/FirmwarePlugin/APM/ArduPlaneFirmwarePlugin.cc" line="22"/>
+        <source>Training</source>
+        <translation>Обучение</translation>
+    </message>
+    <message>
+        <location filename="../src/FirmwarePlugin/APM/ArduPlaneFirmwarePlugin.cc" line="24"/>
+        <source>FBW A</source>
+        <translation>FBW A</translation>
+    </message>
+    <message>
+        <location filename="../src/FirmwarePlugin/APM/ArduPlaneFirmwarePlugin.cc" line="25"/>
+        <source>FBW B</source>
+        <translation>FBW B</translation>
+    </message>
+    <message>
+        <location filename="../src/FirmwarePlugin/APM/ArduPlaneFirmwarePlugin.cc" line="26"/>
+        <source>Cruise</source>
+        <translation>Крейсерская</translation>
+    </message>
+    <message>
+        <location filename="../src/FirmwarePlugin/APM/ArduPlaneFirmwarePlugin.cc" line="32"/>
+        <source>Initializing</source>
+        <translation>Инициализация</translation>
+    </message>
+    <message>
+        <location filename="../src/FirmwarePlugin/APM/ArduPlaneFirmwarePlugin.cc" line="33"/>
+        <source>QuadPlane Stabilize</source>
+        <translation>Стабилизировать квадрокоптер</translation>
+    </message>
+    <message>
+        <location filename="../src/FirmwarePlugin/APM/ArduPlaneFirmwarePlugin.cc" line="34"/>
+        <source>QuadPlane Hover</source>
+        <translation>Зависнуть квадрокоптеру</translation>
+    </message>
+    <message>
+        <location filename="../src/FirmwarePlugin/APM/ArduPlaneFirmwarePlugin.cc" line="35"/>
+        <source>QuadPlane Loiter</source>
+        <translation>Барражировать квадрокоптеру</translation>
+    </message>
+    <message>
+        <location filename="../src/FirmwarePlugin/APM/ArduPlaneFirmwarePlugin.cc" line="36"/>
+        <source>QuadPlane Land</source>
+        <translation>приземлиться квадрокоптеру</translation>
+    </message>
+    <message>
+        <location filename="../src/FirmwarePlugin/APM/ArduPlaneFirmwarePlugin.cc" line="37"/>
+        <source>QuadPlane RTL</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../src/FirmwarePlugin/APM/ArduSubFirmwarePlugin.cc" line="39"/>
+        <source>Depth Hold</source>
+        <translation>Удержание глубины</translation>
+    </message>
+    <message>
+        <location filename="../src/FirmwarePlugin/APM/ArduSubFirmwarePlugin.cc" line="43"/>
+        <source>Surface</source>
+        <translation>Поверхность</translation>
     </message>
 </context>
 <context>
@@ -13755,6 +13955,266 @@ Abs Alt </source>
         <location filename="../src/Vehicle/Vehicle.cc" line="2937"/>
         <source>Vehicle did not respond to command: %1</source>
         <translation>Аппарат не отвеает на команду: %1</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3175"/>
+        <source>Gyro</source>
+        <translation>Гироскоп</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3176"/>
+        <source>Accelerometer</source>
+        <translation>Акселерометр</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3177"/>
+        <source>Magnetometer</source>
+        <translation>Магнетометр</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3178"/>
+        <source>Absolute pressure</source>
+        <translation>Абсолютное давление</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3179"/>
+        <source>Differential pressure</source>
+        <translation>Перепад давления</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3180"/>
+        <source>GPS</source>
+        <translation>GPS</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3181"/>
+        <source>Optical flow</source>
+        <translation>Оптический поток</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3182"/>
+        <source>Computer vision position</source>
+        <translation>Положение компьютерного зрения</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3183"/>
+        <source>Laser based position</source>
+        <translation>Положение по лазеру</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3184"/>
+        <source>External ground truth</source>
+        <translation>Внешнее наземное подтверждение</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3185"/>
+        <source>Angular rate control</source>
+        <translation>Управление угловой скорости</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3186"/>
+        <source>Attitude stabilization</source>
+        <translation>Стабилизация по высоте</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3187"/>
+        <source>Yaw position</source>
+        <translation>Положение курса</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3188"/>
+        <source>Z/altitude control</source>
+        <translation>Контроль высоты по оси Z</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3189"/>
+        <source>X/Y position control</source>
+        <translation>Контроль высоты по осям x/Y</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3190"/>
+        <source>Motor outputs / control</source>
+        <translation>Мотор выходы / контроль</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3191"/>
+        <source>RC receiver</source>
+        <translation>RC приемник</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3192"/>
+        <source>Gyro 2</source>
+        <translation>Гироскоп 2</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3193"/>
+        <source>Accelerometer 2</source>
+        <translation>Акселерометр 2</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3194"/>
+        <source>Magnetometer 2</source>
+        <translation>Магнетометр 2</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3195"/>
+        <source>GeoFence</source>
+        <translation>Геозона</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3196"/>
+        <source>AHRS</source>
+        <translation>AHRS</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3197"/>
+        <source>Terrain</source>
+        <translation>Местность</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3198"/>
+        <source>Motors reversed</source>
+        <translation>Моторы зарезервированы</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3199"/>
+        <source>Logging</source>
+        <translation>Логгирование</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3200"/>
+        <source>Battery</source>
+        <translation>Аккумулятор</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="51"/>
+        <source>Vehicle%1</source>
+        <translation>Аппарат%1</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="52"/>
+        <source>JoystickMode</source>
+        <translation>РежимДжойстика</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="53"/>
+        <source>JoystickEnabled</source>
+        <translation>ДжойстикВкл</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="55"/>
+        <source>roll</source>
+        <translation>крен</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="56"/>
+        <source>pitch</source>
+        <translation>тангаж</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="57"/>
+        <source>heading</source>
+        <translation>направление</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="58"/>
+        <source>rollRate</source>
+        <translation>УглСкКрена</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="59"/>
+        <source>pitchRate</source>
+        <translation>УглСкТангаж</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="60"/>
+        <source>yawRate</source>
+        <translation>УглСкКурса</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="61"/>
+        <source>airSpeed</source>
+        <translation>ВоздСкор</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="62"/>
+        <source>groundSpeed</source>
+        <translation>ПутСкор</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="63"/>
+        <source>climbRate</source>
+        <translation>СкНабВыс</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="64"/>
+        <source>altitudeRelative</source>
+        <translation>ОтнВыс</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="65"/>
+        <source>altitudeAMSL</source>
+        <translation>AMSLВыс</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="66"/>
+        <source>flightDistance</source>
+        <translation>Трек</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="67"/>
+        <source>flightTime</source>
+        <translation>ВрПолета</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="68"/>
+        <source>distanceToHome</source>
+        <translation>РасстДоДом</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="69"/>
+        <source>hobbs</source>
+        <translation>hobbs</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="71"/>
+        <source>gps</source>
+        <translation>gps</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="72"/>
+        <source>battery</source>
+        <translation>акк</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="73"/>
+        <source>battery2</source>
+        <translation>акк2</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="74"/>
+        <source>wind</source>
+        <translation>ветер</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="75"/>
+        <source>vibration</source>
+        <translation>вибрации</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="76"/>
+        <source>temperature</source>
+        <translation>температура</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="77"/>
+        <source>clock</source>
+        <translation>часы</translation>
+    </message>
+    <message>
+        <location filename="../src/Vehicle/Vehicle.cc" line="78"/>
+        <source>distanceSensor</source>
+        <translation>ДатчРасст</translation>
     </message>
 </context>
 <context>

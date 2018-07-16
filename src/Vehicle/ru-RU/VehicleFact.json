@@ -1,0 +1,104 @@
+[
+{
+    "name":             "roll",
+    "shortDescription": "Крен",
+    "type":             "double",
+    "decimalPlaces":    1,
+    "units":            "град"
+},
+{
+    "name":             "pitch",
+    "shortDescription": "Тангаж",
+    "type":             "double",
+    "decimalPlaces":    1,
+    "units":            "град"
+},
+{
+    "name":             "heading",
+    "shortDescription": "Курс",
+    "type":             "double",
+    "decimalPlaces":    0,
+    "units":            "град"
+},
+{
+    "name":             "rollRate",
+    "shortDescription": "Угл ск по крену",
+    "type":             "double",
+    "decimalPlaces":    1,
+    "units":            "град/с"
+},
+{
+    "name":             "pitchRate",
+    "shortDescription": "Угл ск по тангажу",
+    "type":             "double",
+    "decimalPlaces":    1,
+    "units":            "град/с"
+},
+{
+    "name":             "yawRate",
+    "shortDescription": "Угл ск по курсу",
+    "type":             "double",
+    "decimalPlaces":    1,
+    "units":            "град/с"
+},
+{
+    "name":             "groundSpeed",
+    "shortDescription": "Путевая ск",
+    "type":             "double",
+    "decimalPlaces":    1,
+    "units":            "м/с"
+},
+{
+    "name":             "airSpeed",
+    "shortDescription": "Возд ск",
+    "type":             "double",
+    "decimalPlaces":    1,
+    "units":            "м/с"
+},
+{
+    "name":             "climbRate",
+    "shortDescription": "Ск набора выс",
+    "type":             "double",
+    "decimalPlaces":    1,
+    "units":            "м/с"
+},
+{
+    "name":             "altitudeRelative",
+    "shortDescription": "Отн выс",
+    "type":             "double",
+    "decimalPlaces":    1,
+    "units":            "м"
+},
+{
+    "name":             "altitudeAMSL",
+    "shortDescription": "Выс",
+    "type":             "double",
+    "decimalPlaces":    1,
+    "units":            "м"
+},
+{
+    "name":             "flightDistance",
+    "shortDescription": "Трек",
+    "type":             "double",
+    "decimalPlaces":    1,
+    "units":            "м"
+},
+{
+    "name":             "distanceToHome",
+    "shortDescription": "Расст до Дом",
+    "type":             "double",
+    "decimalPlaces":    1,
+    "units":            "м"
+},
+{
+    "name":             "flightTime",
+    "shortDescription": "Время полета",
+    "type":             "elapsedSeconds",
+    "decimalPlaces":    1
+},
+{
+    "name":             "hobbs",
+    "shortDescription": "Налет",
+    "type":             "string"
+}
+]

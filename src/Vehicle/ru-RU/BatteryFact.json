@@ -1,0 +1,64 @@
+[
+{
+    "name":             "voltage",
+    "shortDescription": "Напряжение",
+    "type":             "double",
+    "decimalPlaces":    2,
+    "units":            "В"
+},
+{
+    "name":             "percentRemaining",
+    "shortDescription": "Процент",
+    "type":             "int32",
+    "decimalPlaces":    0,
+    "units":            "%"
+},
+{
+    "name":             "mahConsumed",
+    "shortDescription": "Потребление",
+    "type":             "int32",
+     "decimalPlaces":    0,
+     "units":            "mAh"
+},
+{
+    "name":             "current",
+    "shortDescription": "Ток",
+    "type":             "float",
+    "decimalPlaces":    2,
+    "units":            "A"
+},
+{
+    "name":             "temperature",
+    "shortDescription": "Температура",
+    "type":             "double",
+    "decimalPlaces":    0,
+    "units":            "C"
+},
+{
+    "name":             "cellCount",
+    "shortDescription": "Кол ячеек",
+    "type":             "int32",
+    "decimalPlaces":    0
+},
+{
+    "name":             "instantPower",
+    "shortDescription": "Ватт",
+    "type":             "float",
+    "decimalPlaces":    2,
+    "units":            "Вт"
+},
+{
+    "name":             "timeRemaining",
+    "shortDescription": "Осталось времени",
+    "type":             "int32",
+    "units":            "с"
+},
+{
+    "name":             "chargeState",
+    "shortDescription": "Заряд",
+    "type":             "uint8",
+    "enumStrings":      "Состояние низкого напряжения не поддерживается,Нормальная работа,Состояние низкого напряжение,Состояние критического напряжения,Аварийное состояние аккумулятора,Сбой аккумулятора,Аккумулятор неисправен",
+    "enumValues":       "0,1,2,3,4,5,6",
+    "decimalPlaces":    0
+}
+]

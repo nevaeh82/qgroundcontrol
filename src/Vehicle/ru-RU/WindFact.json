@@ -1,0 +1,24 @@
+[
+{
+    "name":             "direction",
+    "shortDescription": "Направление ветра",
+    "type":             "double",
+    "decimalPlaces":    1,
+    "units":            "град"
+},
+{
+    "name":             "speed",
+    "shortDescription": "Скор ветра",
+    "type":             "double",
+    "decimalPlaces":    1,
+    "units":            "м/с"
+},
+{
+    "name":             "verticalSpeed",
+    "shortDescription": "Скор ветра (верт)",
+    "type":             "double",
+    "decimalPlaces":    1,
+    "units":            "м/с"
+}
+]
+

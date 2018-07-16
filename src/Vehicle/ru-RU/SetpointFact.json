@@ -1,0 +1,44 @@
+[
+{
+    "name":             "roll",
+    "shortDescription": "Заданный крен",
+    "type":             "double",
+    "decimalPlaces":    1,
+    "units":            "deg"
+},
+{
+    "name":             "pitch",
+    "shortDescription": "Заданный тангаж",
+    "type":             "double",
+    "decimalPlaces":    1,
+    "units":            "deg"
+},
+{
+    "name":             "yaw",
+    "shortDescription": "Заданный курс",
+    "type":             "double",
+    "decimalPlaces":    1,
+    "units":            "deg"
+},
+{
+    "name":             "rollRate",
+    "shortDescription": "Заданная угловая скорость крена",
+    "type":             "double",
+    "decimalPlaces":    1,
+    "units":            "град/с"
+},
+{
+    "name":             "pitchRate",
+    "shortDescription": "Заданная угловая скорость тангажа",
+    "type":             "double",
+    "decimalPlaces":    1,
+    "units":            "град/с"
+},
+{
+    "name":             "yawRate",
+    "shortDescription": "Заданная угловая скорость курса",
+    "type":             "double",
+    "decimalPlaces":    1,
+    "units":            "град/с"
+}
+]
