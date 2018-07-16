@@ -1,0 +1,45 @@
+[
+{
+    "name":             "camera tilt",
+    "shortDescription": "Наклог камеры",
+    "type":             "int16",
+    "units":            "%"
+},
+{
+    "name":             "tether turns",
+    "shortDescription": "Поворот троса",
+    "type":             "int16",
+    "units":            "По часой стрелке"
+},
+{
+    "name":             "lights 1",
+    "shortDescription": "Огни 1 уровень",
+    "type":             "int16",
+    "units":            "%"
+},
+{
+    "name":             "lights 2",
+    "shortDescription": "Огни 2 уровень",
+    "type":             "int16",
+    "units":            "%"
+},
+{
+    "name":             "pilot gain",
+    "shortDescription": "Усиление управляющего",
+    "type":             "int16",
+    "units":            "%"
+},
+{
+    "name":             "input hold",
+    "shortDescription": "Удерживать вход",
+    "type":             "int16",
+    "enumStrings":      "ОТключено,Включено",
+    "enumValues":       "0,1"
+},
+{    "name":             "rangefinder distance",
+    "shortDescription": "дальномер",
+    "type":             "float",
+    "decimalPlaces":    2,
+    "units":            "метров"
+}
+]

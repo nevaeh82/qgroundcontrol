@@ -23,25 +23,25 @@ APMCopterMode::APMCopterMode(uint32_t mode, bool settable) :
     APMCustomMode(mode, settable)
 {
     QMap<uint32_t,QString> enumToString;
-    enumToString.insert(STABILIZE, "Stabilize");
-    enumToString.insert(ACRO,      "Acro");
-    enumToString.insert(ALT_HOLD,  "Altitude Hold");
-    enumToString.insert(AUTO,      "Auto");
-    enumToString.insert(GUIDED,    "Guided");
-    enumToString.insert(LOITER,    "Loiter");
-    enumToString.insert(RTL,       "RTL");
-    enumToString.insert(CIRCLE,    "Circle");
-    enumToString.insert(LAND,      "Land");
-    enumToString.insert(DRIFT,     "Drift");
-    enumToString.insert(SPORT,     "Sport");
-    enumToString.insert(FLIP,      "Flip");
-    enumToString.insert(AUTOTUNE,  "Autotune");
-    enumToString.insert(POS_HOLD,  "Position Hold");
-    enumToString.insert(BRAKE,     "Brake");
-    enumToString.insert(THROW,     "Throw");
-    enumToString.insert(AVOID_ADSB,"Avoid ADSB");
-    enumToString.insert(GUIDED_NOGPS,"Guided No GPS");
-    enumToString.insert(SAFE_RTL,"Smart RTL");
+    enumToString.insert(STABILIZE, QObject::tr("Stabilize"));
+    enumToString.insert(ACRO,      QObject::tr("Acro"));
+    enumToString.insert(ALT_HOLD,  QObject::tr("Altitude Hold"));
+    enumToString.insert(AUTO,      QObject::tr("Auto"));
+    enumToString.insert(GUIDED,    QObject::tr("Guided"));
+    enumToString.insert(LOITER,    QObject::tr("Loiter"));
+    enumToString.insert(RTL,       QObject::tr("RTL"));
+    enumToString.insert(CIRCLE,    QObject::tr("Circle"));
+    enumToString.insert(LAND,      QObject::tr("Land"));
+    enumToString.insert(DRIFT,     QObject::tr("Drift"));
+    enumToString.insert(SPORT,     QObject::tr("Sport"));
+    enumToString.insert(FLIP,      QObject::tr("Flip"));
+    enumToString.insert(AUTOTUNE,  QObject::tr("Autotune"));
+    enumToString.insert(POS_HOLD,  QObject::tr("Position Hold"));
+    enumToString.insert(BRAKE,     QObject::tr("Brake"));
+    enumToString.insert(THROW,     QObject::tr("Throw"));
+    enumToString.insert(AVOID_ADSB,QObject::tr("Avoid ADSB"));
+    enumToString.insert(GUIDED_NOGPS,QObject::tr("Guided No GPS"));
+    enumToString.insert(SAFE_RTL,QObject::tr("Smart RTL"));
 
 
     setEnumToStringMapping(enumToString);

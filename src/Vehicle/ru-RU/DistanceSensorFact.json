@@ -1,0 +1,72 @@
+[
+{
+    "name":             "rotationNone",
+    "shortDescription": "Вперед",
+    "type":             "double",
+    "decimalPlaces":    2,
+    "units":            "м"
+},
+{
+    "name":             "rotationYaw45",
+    "shortDescription": "Вперед/Направо",
+    "type":             "double",
+    "decimalPlaces":    2,
+    "units":            "м"
+},
+{
+    "name":             "rotationYaw90",
+    "shortDescription": "Направо",
+    "type":             "double",
+    "decimalPlaces":    2,
+    "units":            "м"
+},
+{
+    "name":             "rotationYaw135",
+    "shortDescription": "Назад/Направо",
+    "type":             "double",
+    "decimalPlaces":    2,
+    "units":            "м"
+},
+{
+    "name":             "rotationYaw180",
+    "shortDescription": "Назад",
+    "type":             "double",
+    "decimalPlaces":    2,
+    "units":            "м"
+},
+{
+    "name":             "rotationYaw225",
+    "shortDescription": "Назад/Налево",
+    "type":             "double",
+    "decimalPlaces":    2,
+    "units":            "м"
+},
+{
+    "name":             "rotationYaw270",
+    "shortDescription": "Налево",
+    "type":             "double",
+    "decimalPlaces":    2,
+    "units":            "м"
+},
+{
+    "name":             "rotationYaw315",
+    "shortDescription": "Вперед/Налево",
+    "type":             "double",
+    "decimalPlaces":    2,
+    "units":            "м"
+},
+{
+    "name":             "rotationPitch90",
+    "shortDescription": "Вверх",
+    "type":             "double",
+    "decimalPlaces":    2,
+    "units":            "м"
+},
+{
+    "name":             "rotationPitch270",
+    "shortDescription": "Вниз",
+    "type":             "double",
+    "decimalPlaces":    2,
+    "units":            "м"
+}
+]

@@ -33,15 +33,15 @@ APMSubMode::APMSubMode(uint32_t mode, bool settable) :
     APMCustomMode(mode, settable)
 {
     QMap<uint32_t,QString> enumToString;
-    enumToString.insert(MANUAL, "Manual");
-    enumToString.insert(STABILIZE, "Stabilize");
-    enumToString.insert(ACRO, "Acro");
-    enumToString.insert(ALT_HOLD,  "Depth Hold");
-    enumToString.insert(AUTO, "Auto");
-    enumToString.insert(GUIDED, "Guided");
-    enumToString.insert(CIRCLE, "Circle");
-    enumToString.insert(SURFACE, "Surface");
-    enumToString.insert(POSHOLD, "Position Hold");
+    enumToString.insert(MANUAL, QObject::tr("Manual"));
+    enumToString.insert(STABILIZE, QObject::tr("Stabilize"));
+    enumToString.insert(ACRO, QObject::tr("Acro"));
+    enumToString.insert(ALT_HOLD,  QObject::tr("Depth Hold"));
+    enumToString.insert(AUTO, QObject::tr("Auto"));
+    enumToString.insert(GUIDED, QObject::tr("Guided"));
+    enumToString.insert(CIRCLE, QObject::tr("Circle"));
+    enumToString.insert(SURFACE, QObject::tr("Surface"));
+    enumToString.insert(POSHOLD, QObject::tr("Position Hold"));
 
     setEnumToStringMapping(enumToString);
 }
