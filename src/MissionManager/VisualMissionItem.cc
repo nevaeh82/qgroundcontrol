@@ -72,6 +72,8 @@ void VisualMissionItem::_commonInit(void)
 
         connect(this, &VisualMissionItem::coordinateChanged, this, &VisualMissionItem::_updateTerrainAltitude);
     }
+
+
 }
 
 const VisualMissionItem& VisualMissionItem::operator=(const VisualMissionItem& other)
@@ -203,3 +205,4 @@ void VisualMissionItem::_terrainDataReceived(bool success, QList<double> heights
     emit terrainAltitudeChanged(_terrainAltitude);
     sender()->deleteLater();
 }
+

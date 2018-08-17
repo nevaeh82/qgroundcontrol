@@ -28,9 +28,9 @@ public:
 
     }
 
-    Q_PROPERTY(bool     available           READ available          WRITE setAvailable  NOTIFY availableChanged)
-    Q_PROPERTY(bool     settingsSpecified   READ settingsSpecified                      NOTIFY settingsSpecifiedChanged)
-    Q_PROPERTY(bool     dirty               READ dirty              WRITE setDirty      NOTIFY availableChanged)
+    Q_PROPERTY(bool     available           READ available          WRITE setAvailable      NOTIFY availableChanged)
+    Q_PROPERTY(bool     settingsSpecified   READ settingsSpecified                          NOTIFY settingsSpecifiedChanged)
+    Q_PROPERTY(bool     dirty               READ dirty              WRITE setDirty          NOTIFY availableChanged)
 
     virtual bool available          (void) const = 0;
     virtual bool settingsSpecified  (void) const = 0;

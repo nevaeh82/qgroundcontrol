@@ -13,6 +13,9 @@
 
 #include <QAbstractListModel>
 
+#include <QDebug>
+#include <QMetaProperty>
+
 class QmlObjectListModel : public QAbstractListModel
 {
     Q_OBJECT

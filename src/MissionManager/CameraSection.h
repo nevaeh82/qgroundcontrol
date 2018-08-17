@@ -115,6 +115,7 @@ private:
     Fact    _cameraPhotoIntervalTimeFact;
     Fact    _cameraModeFact;
     bool    _dirty;
+    bool    _showCameraSection;
 
     static QMap<QString, FactMetaData*> _metaDataMap;
 

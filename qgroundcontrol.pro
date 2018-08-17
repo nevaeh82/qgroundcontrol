@@ -203,6 +203,7 @@ CONFIG += qt \
     thread \
     c++11 \
     qtquickcompiler \
+    qml_debug \
 
 contains(DEFINES, ENABLE_VERBOSE_OUTPUT) {
     message("Enable verbose compiler output (manual override from command line)")

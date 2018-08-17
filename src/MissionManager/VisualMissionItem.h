@@ -68,6 +68,7 @@ public:
     Q_PROPERTY(double           missionVehicleYaw                   READ missionVehicleYaw                                              NOTIFY missionVehicleYawChanged)                    ///< Expected vehicle yaw at this point in mission
     Q_PROPERTY(bool             flyView                             READ flyView                                                        CONSTANT)
 
+
     // The following properties are calculated/set by the MissionController recalc methods
 
     Q_PROPERTY(double altDifference     READ altDifference      WRITE setAltDifference      NOTIFY altDifferenceChanged)        ///< Change in altitude from previous waypoint
@@ -77,7 +78,9 @@ public:
     Q_PROPERTY(double azimuth           READ azimuth            WRITE setAzimuth            NOTIFY azimuthChanged)              ///< Azimuth to previous waypoint
     Q_PROPERTY(double distance          READ distance           WRITE setDistance           NOTIFY distanceChanged)             ///< Distance to previous waypoint
 
-    // Property accesors
+    // Property accesors3
+
+
 
     bool homePosition               (void) const { return _homePositionSpecialCase; }
     void setHomePositionSpecialCase (bool homePositionSpecialCase) { _homePositionSpecialCase = homePositionSpecialCase; }
@@ -197,6 +200,8 @@ signals:
     void exitCoordinateHasRelativeAltitudeChanged   (bool exitCoordinateHasRelativeAltitude);
     void exitCoordinateSameAsEntryChanged           (bool exitCoordinateSameAsEntry);
 
+
+
 protected:
     Vehicle*    _vehicle;
     bool        _flyView;
@@ -230,4 +235,5 @@ private:
     QTimer _updateTerrainTimer;
     double _lastLatTerrainQuery;
     double _lastLonTerrainQuery;
+
 };

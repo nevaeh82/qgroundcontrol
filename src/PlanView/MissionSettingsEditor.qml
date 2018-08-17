@@ -10,6 +10,7 @@ import QGroundControl.FactControls      1.0
 import QGroundControl.Palette           1.0
 import QGroundControl.SettingsManager   1.0
 import QGroundControl.Controllers       1.0
+import QGroundControl.SettingsItem      1.0
 
 // Editor for Mission Settings
 Rectangle {
@@ -38,6 +39,7 @@ Rectangle {
     property bool   _waypointsOnlyMode:             QGroundControl.corePlugin.options.missionWaypointsOnly
     property bool   _showCameraSection:             !_waypointsOnlyMode || QGroundControl.corePlugin.showAdvancedUI
     property bool   _simpleMissionStart:            QGroundControl.corePlugin.options.showSimpleMissionStart
+    property MissionSettingsItem missionItem: null
 
     readonly property string _firmwareLabel:    qsTr("Firmware")
     readonly property string _vehicleLabel:     qsTr("Vehicle")
@@ -45,6 +47,20 @@ Rectangle {
 
     QGCPalette { id: qgcPal }
     QGCFileDialogController { id: fileController }
+
+    function changeVisibility(isVisible) {
+        console.log("ChangeCameraSection Visible", isVisible);
+        cameraSection.visible = isVisible;
+        _showCameraSection = isVisible;
+
+    }
+
+    onMissionItemChanged: {
+        // This is available in all editors.
+        console.log("MissionItem changed: ", missionItem)
+        missionItem.showCameraSectionSignal.connect(changeVisibility)
+        changeVisibility(missionItem.showCameraSection)
+    }
 
     Column {
         id:                 valuesColumn
@@ -95,6 +111,9 @@ Rectangle {
                 checked:    missionItem.cameraSection.settingsSpecified
                 visible:    _showCameraSection
             }
+
+
+
 
             QGCLabel {
                 anchors.left:           parent.left
@@ -235,4 +254,12 @@ Rectangle {
             }
         } // Column
     } // Column
+
+//    Component.onCompleted: {
+//        cameraSection.visible = false;
+//    console.log("Debug mainRectangle:");
+//    console.log(qmlDebugger.properties(valuesRect));
+    //console.log("Debug textElement:");
+    //console.log(qmlDebugger.properties(textElement, false));
+//    }
 } // Rectangle

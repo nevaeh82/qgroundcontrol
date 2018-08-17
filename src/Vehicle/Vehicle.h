@@ -625,6 +625,8 @@ public:
     bool orbitModeSupported     (void) const;
     bool takeoffVehicleSupported(void) const;
 
+    QGCApplication *getqgcApp();
+
     // Property accessors
 
     QGeoCoordinate coordinate(void) { return _coordinate; }
@@ -916,6 +918,8 @@ public:
 
     /// Vehicle is about to be deleted
     void prepareDelete();
+
+    void showAdvancedUI(bool state);
 
 signals:
     void allLinksInactive(Vehicle* vehicle);

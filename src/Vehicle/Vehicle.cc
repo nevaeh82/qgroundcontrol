@@ -489,6 +489,12 @@ void Vehicle::prepareDelete()
     }
 }
 
+void Vehicle::showAdvancedUI(bool state)
+{
+    //QGCCorePlugin::setShowAdvancedUI(state);
+
+}
+
 void Vehicle::_offlineFirmwareTypeSettingChanged(QVariant value)
 {
     _firmwareType = static_cast<MAV_AUTOPILOT>(value.toInt());
@@ -2719,6 +2725,11 @@ bool Vehicle::orbitModeSupported() const
 bool Vehicle::takeoffVehicleSupported() const
 {
     return _firmwarePlugin->isCapable(this, FirmwarePlugin::TakeoffVehicleCapability);
+}
+
+QGCApplication *Vehicle::getqgcApp()
+{
+    return qgcApp();
 }
 
 void Vehicle::guidedModeRTL(void)

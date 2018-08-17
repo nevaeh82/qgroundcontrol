@@ -537,6 +537,16 @@ QObject* MainWindow::rootQmlObject(void)
     return _mainQmlWidgetHolder->getRootObject();
 }
 
+QObject *MainWindow::rootQmlContext()
+{
+    return _mainQmlWidgetHolder->getRootContext();
+}
+
+void MainWindow::setContextPropertyObject(const QString &name, QObject *object)
+{
+    _mainQmlWidgetHolder->setContextPropertyObject(name, object);
+}
+
 void MainWindow::_showAdvancedUIChanged(bool advanced)
 {
     if (advanced) {

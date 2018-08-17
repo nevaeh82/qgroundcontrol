@@ -86,6 +86,7 @@
 #include "EditPositionDialogController.h"
 #include "FactValueSliderListModel.h"
 #include "KMLFileHelper.h"
+#include "MissionSettingsItem.h"
 
 #ifndef NO_SERIAL_LINK
 #include "SerialLink.h"
@@ -379,6 +380,9 @@ void QGCApplication::_initCommon(void)
     qmlRegisterUncreatableType<VisualMissionItem>   ("QGroundControl.Controllers",          1, 0, "VisualMissionItem",      "Reference only");
     qmlRegisterUncreatableType<FactValueSliderListModel>("QGroundControl.FactControls",     1, 0, "FactValueSliderListModel","Reference only");
 
+    qmlRegisterUncreatableType<MissionSettingsItem>("QGroundControl.SettingsItem",          1, 0, "MissionSettingsItem", "Reference only");
+
+
     qmlRegisterType<ParameterEditorController>      ("QGroundControl.Controllers", 1, 0, "ParameterEditorController");
     qmlRegisterType<ESP8266ComponentController>     ("QGroundControl.Controllers", 1, 0, "ESP8266ComponentController");
     qmlRegisterType<ScreenToolsController>          ("QGroundControl.Controllers", 1, 0, "ScreenToolsController");
@@ -574,6 +578,38 @@ bool QGCApplication::_checkTelemetrySavePath(bool useMessageBox)
 
     return true;
 }
+
+void QGCApplication::setContextPropertyObject(const QString &name, QObject *object)
+{
+    MainWindow * mainWindow = MainWindow::instance();
+    if (mainWindow) {
+        mainWindow->setContextPropertyObject(name, object);
+    } else if (runningUnitTests()){
+        // Unit test can run without a main window
+        //return NULL;
+    } else {
+        qWarning() << "Why is MainWindow missing?";
+        //return NULL;
+    }
+}
+
+//QObject *QGCApplication::rootQmlContext()
+//{
+////#ifdef __mobile__
+////    return _qmlAppEngine->rootObjects()[0];
+////#else
+//    MainWindow * mainWindow = MainWindow::instance();
+//    if (mainWindow) {
+//        return mainWindow->rootQmlContext();
+//    } else if (runningUnitTests()){
+//        // Unit test can run without a main window
+//        return NULL;
+//    } else {
+//        qWarning() << "Why is MainWindow missing?";
+//        return NULL;
+//    }
+//#endif
+//}
 
 void QGCApplication::_loadCurrentStyleSheet(void)
 {

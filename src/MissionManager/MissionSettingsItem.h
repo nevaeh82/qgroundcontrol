@@ -10,6 +10,7 @@
 #ifndef MissionSettingsComplexItem_H
 #define MissionSettingsComplexItem_H
 
+#include <QDebug>
 #include "ComplexMissionItem.h"
 #include "MissionItem.h"
 #include "Fact.h"
@@ -31,10 +32,15 @@ public:
     Q_PROPERTY(QObject* cameraSection               READ cameraSection                                          CONSTANT)
     Q_PROPERTY(QObject* speedSection                READ speedSection                                           CONSTANT)
 
+    Q_PROPERTY(bool     showCameraSection                 READ getShowCameraSection     WRITE setShowCameraSection    NOTIFY showCameraSectionSignal)
+
     Fact*           plannedHomePositionAltitude (void) { return &_plannedHomePositionAltitudeFact; }
     bool            missionEndRTL               (void) const { return _missionEndRTL; }
     CameraSection*  cameraSection               (void) { return &_cameraSection; }
     SpeedSection*   speedSection                (void) { return &_speedSection; }
+
+    bool getShowCameraSection        (void) const  {return _showCameraSection; }
+    bool setShowCameraSection         (bool showCameraSection);
 
     void setMissionEndRTL(bool missionEndRTL);
 
@@ -66,8 +72,8 @@ public:
     bool            isStandaloneCoordinate  (void) const final { return false; }
     bool            specifiesCoordinate     (void) const final;
     bool            specifiesAltitudeOnly   (void) const final { return false; }
-    QString         commandDescription      (void) const final { return "Mission Start"; }
-    QString         commandName             (void) const final { return "Mission Start"; }
+    QString         commandDescription      (void) const final { return tr("Mission Start"); }
+    QString         commandName             (void) const final { return tr("Mission Start"); }
     QString         abbreviation            (void) const final;
     QGeoCoordinate  coordinate              (void) const final { return _plannedHomePositionCoordinate; }
     QGeoCoordinate  exitCoordinate          (void) const final { return _plannedHomePositionCoordinate; }
@@ -92,6 +98,8 @@ public:
 signals:
     void specifyMissionFlightSpeedChanged   (bool specifyMissionFlightSpeed);
     void missionEndRTLChanged               (bool missionEndRTL);
+    void showCameraSectionSignal            (bool showCameraSection);
+
 
 private slots:
     void _setDirtyAndUpdateLastSequenceNumber   (void);
@@ -109,6 +117,8 @@ private:
     SpeedSection    _speedSection;
     int             _sequenceNumber;
     bool            _dirty;
+
+    bool            _showCameraSection;
 
     static QMap<QString, FactMetaData*> _metaDataMap;
 

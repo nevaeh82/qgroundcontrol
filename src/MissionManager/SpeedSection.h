@@ -54,6 +54,7 @@ private:
     bool    _dirty;
     bool    _specifyFlightSpeed;
     Fact    _flightSpeedFact;
+    bool    _showSpeedSection;
 
     static QMap<QString, FactMetaData*> _metaDataMap;
 

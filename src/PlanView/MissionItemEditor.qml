@@ -216,6 +216,10 @@ Rectangle {
         source:             missionItem.editorQml
         visible:            _currentItem
 
+        onLoaded: {
+            item.missionItem = missionItem
+        }
+
         property var    masterController:   _masterController
         property real   availableWidth:     _root.width - (_margin * 2) ///< How wide the editor should be
         property var    editorRoot:         _root

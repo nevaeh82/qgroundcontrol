@@ -150,6 +150,9 @@ public:
 
     bool _checkTelemetrySavePath(bool useMessageBox);
 
+//    QObject* rootQmlContext(void);
+    void setContextPropertyObject(const QString &name, QObject *object);
+
 private slots:
     void _missingParamsDisplay(void);
 

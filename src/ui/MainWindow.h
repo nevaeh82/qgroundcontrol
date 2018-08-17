@@ -84,6 +84,8 @@ public:
 
     /// @return Root qml object of main window QML
     QObject* rootQmlObject(void);
+    QObject* rootQmlContext(void);
+    void setContextPropertyObject(const QString& name, QObject* object);
 
 public slots:
     /** @brief Save power by reducing update rates */

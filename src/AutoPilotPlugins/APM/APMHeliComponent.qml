@@ -180,7 +180,7 @@ SetupPage {
                 GridLayout {
                     columns: 2
 
-                    QGCLabel { text: _hSvMan.shortDescription }
+                    QGCLabel { text: qsTr(_hSvMan.shortDescription) }
                     FactComboBox {
                         fact:       _hSvMan
                         indexModel: false
