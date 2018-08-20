@@ -52,6 +52,7 @@ Rectangle {
         console.log("ChangeCameraSection Visible", isVisible);
         cameraSection.visible = isVisible;
         _showCameraSection = isVisible;
+        vehicleInfoSectionHeader.visible = isVisible;
 
     }
 
