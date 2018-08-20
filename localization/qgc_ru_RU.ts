@@ -5163,7 +5163,7 @@ propellers on the green thrusters and counter-clockwise propellers on the blue t
     <message>
         <location filename="../src/ui/toolbar/GPSRTKIndicator.qml" line="48"/>
         <source>Survey-in Active</source>
-        <translation>Обзор</translation>
+        <translation>Съемка</translation>
     </message>
     <message>
         <location filename="../src/ui/toolbar/GPSRTKIndicator.qml" line="48"/>
@@ -7379,7 +7379,7 @@ Click the Next button to upload calibration to board. Click Cancel if you don&ap
     <message>
         <location filename="../src/MissionManager/MissionController.cc" line="64"/>
         <source>Survey</source>
-        <translation>Обзор</translation>
+        <translation>Съемка</translation>
     </message>
     <message>
         <location filename="../src/MissionManager/MissionController.cc" line="65"/>
@@ -9528,7 +9528,7 @@ Is this really what you want?</source>
     <message>
         <location filename="../src/PlanView/PlanView.qml" line="351"/>
         <source>Survey</source>
-        <translation>Обзор</translation>
+        <translation>Съемка</translation>
     </message>
     <message>
         <location filename="../src/PlanView/PlanView.qml" line="357"/>
@@ -13226,7 +13226,7 @@ Abs Alt </source>
         <location filename="../src/MissionManager/SurveyComplexItem.h" line="49"/>
         <location filename="../src/MissionManager/SurveyComplexItem.h" line="50"/>
         <source>Survey</source>
-        <translation>Обзор</translation>
+        <translation>Съемка</translation>
     </message>
     <message>
         <location filename="../src/MissionManager/SurveyComplexItem.h" line="51"/>
@@ -13482,7 +13482,7 @@ Abs Alt </source>
     <message>
         <location filename="../src/PlanView/TransectStyleComplexItemStats.qml" line="19"/>
         <source>Survey Area</source>
-        <translation>Площадь обзора</translation>
+        <translation>Площадная съемка</translation>
     </message>
     <message>
         <location filename="../src/PlanView/TransectStyleComplexItemStats.qml" line="22"/>
