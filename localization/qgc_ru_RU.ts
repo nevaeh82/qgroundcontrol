@@ -7586,7 +7586,7 @@ Click the Next button to upload calibration to board. Click Cancel if you don&ap
     <message>
         <location filename="../src/PlanView/MissionSettingsEditor.qml" line="195"/>
         <source>Planned Home Position</source>
-        <translation>Планируемая точка Дом</translation>
+        <translation>Планируемая точка взлета</translation>
     </message>
     <message>
         <location filename="../src/PlanView/MissionSettingsEditor.qml" line="214"/>
