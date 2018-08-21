@@ -3312,27 +3312,27 @@ propellers on the green thrusters and counter-clockwise propellers on the blue t
     <message>
         <location filename="../src/PlanView/CameraCalc.qml" line="184"/>
         <source>Front Lap</source>
-        <translation>Продольное перекрытие</translation>
+        <translation>Прод</translation>
     </message>
     <message>
         <location filename="../src/PlanView/CameraCalc.qml" line="188"/>
         <source>Side Lap</source>
-        <translation>Поперечное перекрытие</translation>
+        <translation>Попер</translation>
     </message>
     <message>
         <location filename="../src/PlanView/CameraCalc.qml" line="196"/>
         <source>Overlap</source>
-        <translation>Перекрытие</translation>
+        <translation>Перекр</translation>
     </message>
     <message>
         <location filename="../src/PlanView/CameraCalc.qml" line="209"/>
         <source>Select one:</source>
-        <translation>Выбрать:</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../src/PlanView/CameraCalc.qml" line="237"/>
         <source>Ground Res</source>
-        <translation>Линейное разрешение на местности</translation>
+        <translation>Л/р мест</translation>
     </message>
     <message>
         <location filename="../src/MissionManager/CameraCalc.cc" line="225"/>
