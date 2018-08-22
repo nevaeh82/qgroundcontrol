@@ -7467,7 +7467,7 @@ Click the Next button to upload calibration to board. Click Cancel if you don&ap
     <message>
         <location filename="../src/PlanView/MissionItemEditor.qml" line="115"/>
         <source>Insert pattern</source>
-        <translation>Вставbnm шаблон</translation>
+        <translation>Вставить шаблон</translation>
     </message>
     <message>
         <location filename="../src/PlanView/MissionItemEditor.qml" line="132"/>
@@ -7534,91 +7534,91 @@ Click the Next button to upload calibration to board. Click Cancel if you don&ap
 <context>
     <name>MissionSettingsEditor</name>
     <message>
-        <location filename="../src/PlanView/MissionSettingsEditor.qml" line="42"/>
+        <location filename="../src/PlanView/MissionSettingsEditor.qml" line="44"/>
         <source>Firmware</source>
         <translation>Прошивка</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/MissionSettingsEditor.qml" line="43"/>
+        <location filename="../src/PlanView/MissionSettingsEditor.qml" line="45"/>
         <source>Vehicle</source>
         <translation>Аппарат</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/MissionSettingsEditor.qml" line="65"/>
+        <location filename="../src/PlanView/MissionSettingsEditor.qml" line="82"/>
         <source>Waypoint alt</source>
         <translation>Высота взлета</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/MissionSettingsEditor.qml" line="74"/>
+        <location filename="../src/PlanView/MissionSettingsEditor.qml" line="91"/>
         <source>Flight speed</source>
         <translation>Скорость полета</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/MissionSettingsEditor.qml" line="102"/>
+        <location filename="../src/PlanView/MissionSettingsEditor.qml" line="122"/>
         <source>Above camera commands will take affect immediately upon mission start.</source>
         <translation>Команды для камеры будут доступны сразу же после начала миссии.</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/MissionSettingsEditor.qml" line="111"/>
+        <location filename="../src/PlanView/MissionSettingsEditor.qml" line="131"/>
         <source>Mission End</source>
         <translation>Конец миссии</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/MissionSettingsEditor.qml" line="122"/>
+        <location filename="../src/PlanView/MissionSettingsEditor.qml" line="142"/>
         <source>Return To Launch</source>
         <translation>Возврат к запуску</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/MissionSettingsEditor.qml" line="131"/>
+        <location filename="../src/PlanView/MissionSettingsEditor.qml" line="151"/>
         <source>Vehicle Info</source>
         <translation>Инфо об аппарате</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/MissionSettingsEditor.qml" line="171"/>
+        <location filename="../src/PlanView/MissionSettingsEditor.qml" line="191"/>
         <source>Cruise speed</source>
         <translation>Крейсерская скорость</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/MissionSettingsEditor.qml" line="182"/>
+        <location filename="../src/PlanView/MissionSettingsEditor.qml" line="202"/>
         <source>Hover speed</source>
         <translation>Скорость зависания</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/MissionSettingsEditor.qml" line="195"/>
+        <location filename="../src/PlanView/MissionSettingsEditor.qml" line="215"/>
         <source>Planned Home Position</source>
         <translation>Планируемая точка взлета</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/MissionSettingsEditor.qml" line="214"/>
+        <location filename="../src/PlanView/MissionSettingsEditor.qml" line="234"/>
         <source>Altitude</source>
         <translation>Высота</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/MissionSettingsEditor.qml" line="226"/>
+        <location filename="../src/PlanView/MissionSettingsEditor.qml" line="246"/>
         <source>Actual position set by vehicle at flight time.</source>
         <translation>Текущая позиция установлена аппаратаом во время полета.</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/MissionSettingsEditor.qml" line="231"/>
+        <location filename="../src/PlanView/MissionSettingsEditor.qml" line="251"/>
         <source>Set Home To Map Center</source>
-        <translation>Установить точку Дом по центру карты</translation>
+        <translation>Дом по центру</translation>
     </message>
 </context>
 <context>
     <name>MissionSettingsItem</name>
     <message>
-        <location filename="../src/MissionManager/MissionSettingsItem.cc" line="305"/>
+        <location filename="../src/MissionManager/MissionSettingsItem.cc" line="323"/>
         <source>H</source>
         <translation>H</translation>
     </message>
     <message>
-        <location filename="../src/MissionManager/MissionSettingsItem.cc" line="305"/>
+        <location filename="../src/MissionManager/MissionSettingsItem.cc" line="323"/>
         <source>Planned Home</source>
         <translation>Дом</translation>
     </message>
     <message>
-        <location filename="../src/MissionManager/MissionSettingsItem.h" line="69"/>
-        <location filename="../src/MissionManager/MissionSettingsItem.h" line="70"/>
+        <location filename="../src/MissionManager/MissionSettingsItem.h" line="75"/>
+        <location filename="../src/MissionManager/MissionSettingsItem.h" line="76"/>
         <source>Mission Start</source>
         <translation>Начало миссии</translation>
     </message>
@@ -10287,7 +10287,7 @@ Is this really what you want?</source>
 <context>
     <name>QGCApplication</name>
     <message>
-        <location filename="../src/QGCApplication.cc" line="181"/>
+        <location filename="../src/QGCApplication.cc" line="182"/>
         <source>You are running %1 as root. You should not do this since it will cause other issues with %1. %1 will now exit. If you are having serial port issues on Ubuntu, execute the following commands to fix most issues:
 sudo usermod -a -G dialout $USER
 sudo apt-get remove modemmanager</source>
@@ -10296,42 +10296,42 @@ sudo usermod -a -G dialout $USER
 sudo apt-get remove modemmanager</translation>
     </message>
     <message>
-        <location filename="../src/QGCApplication.cc" line="542"/>
+        <location filename="../src/QGCApplication.cc" line="546"/>
         <source>Telemetry save error</source>
         <translation>Ошибка сохранения телеметрии</translation>
     </message>
     <message>
-        <location filename="../src/QGCApplication.cc" line="523"/>
+        <location filename="../src/QGCApplication.cc" line="527"/>
         <source>Unable to save telemetry log. Error copying telemetry to &apos;%1&apos;: &apos;%2&apos;.</source>
         <translation>Не возможно сохранить лог телеметрии. Ошибка копирования телеметрии в &apos;%1&apos;: &apos;%2&apos;.</translation>
     </message>
     <message>
-        <location filename="../src/QGCApplication.cc" line="436"/>
+        <location filename="../src/QGCApplication.cc" line="440"/>
         <source>The format for QGroundControl saved settings has been modified. Your saved settings have been reset to defaults.</source>
         <translation>Формат сохраненных настроек для QGroundControl был изменен. Сохраненные настройки сброшен к настройкам по умолчанию.</translation>
     </message>
     <message>
-        <location filename="../src/QGCApplication.cc" line="444"/>
+        <location filename="../src/QGCApplication.cc" line="448"/>
         <source>The Offline Map Cache database has been upgraded. Your old map cache sets have been reset.</source>
         <translation>База данных кэша оффлановой карты обновлена. Установки старого кэша карты сброшены.</translation>
     </message>
     <message>
-        <location filename="../src/QGCApplication.cc" line="525"/>
+        <location filename="../src/QGCApplication.cc" line="529"/>
         <source>Telemetry Save Error</source>
         <translation>Ошибка сохранения телеметрии</translation>
     </message>
     <message>
-        <location filename="../src/QGCApplication.cc" line="546"/>
+        <location filename="../src/QGCApplication.cc" line="550"/>
         <source>Unable to save telemetry log. Application save directory is not set.</source>
         <translation>Не удалось сохранить лог телеметрии. Каталог для сохранения приложения не установлен.</translation>
     </message>
     <message>
-        <location filename="../src/QGCApplication.cc" line="562"/>
+        <location filename="../src/QGCApplication.cc" line="566"/>
         <source>Unable to save telemetry log. Telemetry save directory &quot;%1&quot; does not exist.</source>
         <translation>Не удалось сохранить лог телеметрии. Каталог для сохранения телеметрии &quot;%1&quot; не существует.</translation>
     </message>
     <message>
-        <location filename="../src/QGCApplication.cc" line="634"/>
+        <location filename="../src/QGCApplication.cc" line="670"/>
         <source>Parameters are missing from firmware. You may be running a version of firmware QGC does not work correctly with or your firmware has a bug in it. Missing params: %1</source>
         <translation>В прошивке отсутствуют параметры. Запущенная версия прошивки не работает правильно с QGC или ваша прошивка содержит ошибки. Пропущенные параметры: %1</translation>
     </message>
@@ -13263,7 +13263,7 @@ Abs Alt </source>
     <message>
         <location filename="../src/PlanView/SurveyItemEditor.qml" line="110"/>
         <source>Turnaround dist</source>
-        <translation>Дист поворота</translation>
+        <translation>Базис фото</translation>
     </message>
     <message>
         <source>Refly at 90 degree offset</source>
@@ -13287,7 +13287,7 @@ Abs Alt </source>
     <message>
         <location filename="../src/PlanView/SurveyItemEditor.qml" line="118"/>
         <source>Rotate Entry Point</source>
-        <translation>Вращать точку входа</translation>
+        <translation>Изменить точку входа</translation>
     </message>
     <message>
         <location filename="../src/PlanView/SurveyItemEditor.qml" line="136"/>
@@ -13295,47 +13295,47 @@ Abs Alt </source>
         <translation>Перелетать при повороте на 90 град</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/SurveyItemEditor.qml" line="143"/>
+        <location filename="../src/PlanView/SurveyItemEditor.qml" line="144"/>
         <source>Images in turnarounds</source>
         <translation>Снимки в поворотах</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/SurveyItemEditor.qml" line="150"/>
+        <location filename="../src/PlanView/SurveyItemEditor.qml" line="152"/>
         <source>Fly alternate transects</source>
         <translation>Летать альтернативные разрезы</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/SurveyItemEditor.qml" line="159"/>
+        <location filename="../src/PlanView/SurveyItemEditor.qml" line="161"/>
         <source>Relative altitude</source>
         <translation>Относительная высота</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/SurveyItemEditor.qml" line="175"/>
+        <location filename="../src/PlanView/SurveyItemEditor.qml" line="177"/>
         <source>Terrain</source>
         <translation>Местность</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/SurveyItemEditor.qml" line="187"/>
+        <location filename="../src/PlanView/SurveyItemEditor.qml" line="189"/>
         <source>Vehicle follows terrain</source>
         <translation>Аппарату огибать рельеф</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/SurveyItemEditor.qml" line="199"/>
+        <location filename="../src/PlanView/SurveyItemEditor.qml" line="201"/>
         <source>Tolerance</source>
         <translation>Допуск</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/SurveyItemEditor.qml" line="205"/>
+        <location filename="../src/PlanView/SurveyItemEditor.qml" line="207"/>
         <source>Max Climb Rate</source>
         <translation>Макс скорость подъема</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/SurveyItemEditor.qml" line="211"/>
+        <location filename="../src/PlanView/SurveyItemEditor.qml" line="213"/>
         <source>Max Descent Rate</source>
         <translation>Макс скорость спуска</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/SurveyItemEditor.qml" line="221"/>
+        <location filename="../src/PlanView/SurveyItemEditor.qml" line="223"/>
         <source>Statistics</source>
         <translation>Статистика</translation>
     </message>
@@ -13461,18 +13461,18 @@ Abs Alt </source>
         <translation>Версия TransectStyleComplexItem %2 не поддерживается</translation>
     </message>
     <message>
-        <location filename="../src/MissionManager/TransectStyleComplexItem.cc" line="452"/>
+        <location filename="../src/MissionManager/TransectStyleComplexItem.cc" line="457"/>
         <source>INTERNAL ERROR: TransectStyleComplexItem::_adjustTransectPointsForTerrain called when terrain data not ready. Plan will be incorrect.</source>
         <translation>ВНУТРЕННЯЯ ОШИБКА: TransectStyleComplexItem::_adjustTransectPointsForTerrain вызван, когда данные местности не были готовы. План будет не коррентным.</translation>
     </message>
     <message>
-        <location filename="../src/MissionManager/TransectStyleComplexItem.h" line="103"/>
-        <location filename="../src/MissionManager/TransectStyleComplexItem.h" line="104"/>
+        <location filename="../src/MissionManager/TransectStyleComplexItem.h" line="105"/>
+        <location filename="../src/MissionManager/TransectStyleComplexItem.h" line="106"/>
         <source>Transect</source>
         <translation>Разрез</translation>
     </message>
     <message>
-        <location filename="../src/MissionManager/TransectStyleComplexItem.h" line="105"/>
+        <location filename="../src/MissionManager/TransectStyleComplexItem.h" line="107"/>
         <source>T</source>
         <translation>T</translation>
     </message>
@@ -13503,6 +13503,11 @@ Abs Alt </source>
         <location filename="../src/PlanView/TransectStyleComplexItemStats.qml" line="28"/>
         <source>Trigger Distance</source>
         <translation>Триггер расстояния</translation>
+    </message>
+    <message>
+        <location filename="../src/PlanView/TransectStyleComplexItemStats.qml" line="31"/>
+        <source>Flight time</source>
+        <translation>Время полета</translation>
     </message>
 </context>
 <context>
@@ -13735,42 +13740,42 @@ Abs Alt </source>
 <context>
     <name>Vehicle</name>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="530"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="536"/>
         <source>MAVLink Generic</source>
         <translation>MAVLink Общий</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="537"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="543"/>
         <source>Fixed Wing</source>
         <translation>Фиксированное крыло</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="539"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="545"/>
         <source>Multi-Rotor</source>
         <translation>Мультиротор</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="541"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="547"/>
         <source>VTOL</source>
         <translation>VTOL</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="543"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="549"/>
         <source>Rover</source>
         <translation>Ровер</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="545"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="551"/>
         <source>Sub</source>
         <translation>Подводная лодка</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="547"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="553"/>
         <source>Unknown</source>
         <translation>Неизвестно</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="1826"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="1832"/>
         <source>switch to %2 as priority link</source>
         <translation>переключить на %2 как приоритетное соединение</translation>
     </message>
@@ -13783,99 +13788,99 @@ Abs Alt </source>
         <translation type="vanished">%1 подключение к %2 соединению %3 потеряно</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2543"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2549"/>
         <source>%1 communication to auxiliary link %2 %3</source>
         <translation>%1 подключение к вспомогательному соединению %2 %3</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2550"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2556"/>
         <source>Communication regained</source>
         <translation>Связь восстановлена</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2552"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2558"/>
         <source>Communication regained to vehicle %1 on %2 link %3</source>
         <translation>Соединение восстановлено с аппаратом %1 на %2 линии %3</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2552"/>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2560"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2558"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2566"/>
         <source>priority</source>
         <translation>приоритет</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2552"/>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2560"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2558"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2566"/>
         <source>auxiliary</source>
         <translation>вспомогательный</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2554"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2560"/>
         <source>Communication regained to vehicle %1</source>
         <translation>Связь восстановлена с аппаратом %1</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2558"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2564"/>
         <source>Communication lost</source>
         <translation>Связь потеряна</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2560"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2566"/>
         <source>Communication lost to vehicle %1 on %2 link %3</source>
         <translation>Соединение потеряно с аппаратом %1 на %2 линии %3</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2562"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2568"/>
         <source>Communication lost to vehicle %1</source>
         <translation>Соединение потеряно с аппаратом %1</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2566"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2572"/>
         <source> to vehicle %1</source>
         <translation> с аппаратом %1</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="3077"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3088"/>
         <source>%1 command temporarily rejected</source>
         <translation>%1 команда временно отклонена</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="3080"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3091"/>
         <source>%1 command denied</source>
         <translation>%1 команде отказано</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="3083"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3094"/>
         <source>%1 command not supported</source>
         <translation>%1 команда не поддерживается</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="3086"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3097"/>
         <source>%1 command failed</source>
         <translation>%1 команда не удалась</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2338"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2344"/>
         <source>AutoLoad%1.%2</source>
         <translation>АвтоЗагрузка%1.%2</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="1318"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="1324"/>
         <source>%1 low battery: %2 percent remaining</source>
         <translation>%1 низкое напряжение: %2 процентов осталось</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2268"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2274"/>
         <source>Mission transfer failed. Retry transfer. Error: %1</source>
         <translation>Передача миссии не выполнена. Повторите передачу. Ошибка: %1</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2274"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2280"/>
         <source>GeoFence transfer failed. Retry transfer. Error: %1</source>
         <translation>Передача геозон не выполнена. Ошибка: %1</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2280"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2286"/>
         <source>Rally Point transfer failed. Retry transfer. Error: %1</source>
         <translation>Передача точки Ралли не выполнена. Повторите передачу. Ошибка: %1</translation>
     </message>
@@ -13884,289 +13889,289 @@ Abs Alt </source>
         <translation type="vanished">%1 соединение потеряно</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2635"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2641"/>
         <source>Generic micro air vehicle</source>
         <translation>Общий воздушный микроаппарат</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2636"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2642"/>
         <source>Fixed wing aircraft</source>
         <translation>Самолет с фиксированным крылом</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2637"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2643"/>
         <source>Quadrotor</source>
         <translation>Квадроротор</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2638"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2644"/>
         <source>Coaxial helicopter</source>
         <translation>Соосный вертолет</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2639"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2645"/>
         <source>Normal helicopter with tail rotor.</source>
         <translation>Обычный вертолет с мотором на хвосте.</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2640"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2646"/>
         <source>Ground installation</source>
         <translation>Наземная установка</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2641"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2647"/>
         <source>Operator control unit / ground control station</source>
         <translation>Блок управления оператора / наземная станция управления</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2642"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2648"/>
         <source>Airship, controlled</source>
         <translation>Воздушное судно, управляемое</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2643"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2649"/>
         <source>Free balloon, uncontrolled</source>
         <translation>Неуправляемый аэростат</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2644"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2650"/>
         <source>Rocket</source>
         <translation>Ракета</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2645"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2651"/>
         <source>Ground rover</source>
         <translation>Наземный ровер</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2646"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2652"/>
         <source>Surface vessel, boat, ship</source>
         <translation>Катер, лодка, судно</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2647"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2653"/>
         <source>Submarine</source>
         <translation>Подводная лодка</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2648"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2654"/>
         <source>Hexarotor</source>
         <translation>Хексаротор</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2649"/>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2650"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2655"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2656"/>
         <source>Octorotor</source>
         <translation>Окторотор</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2651"/>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2652"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2657"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2658"/>
         <source>Flapping wing</source>
         <translation>Махолет</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2653"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2659"/>
         <source>Onboard companion controller</source>
         <translation>Бортовой парный контроллер</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2654"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2660"/>
         <source>Two-rotor VTOL using control surfaces in vertical operation in addition. Tailsitter</source>
         <translation>Двухроторный VTOL дополнительно использует контрольную поверхность в вертикальном режиме полета. Tailsitter</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2655"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2661"/>
         <source>Quad-rotor VTOL using a V-shaped quad config in vertical operation. Tailsitter</source>
         <translation>Четырехроторный VTOL использует V-образную квадро конфигурацию в вертикальном режиме полета. Tailsitter</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2656"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2662"/>
         <source>Tiltrotor VTOL</source>
         <translation>Поворотный ротор VTOL</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2657"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2663"/>
         <source>VTOL reserved 2</source>
         <translation>VTOL зарезервирован 2</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2658"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2664"/>
         <source>VTOL reserved 3</source>
         <translation>VTOL зарезервирован 3</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2659"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2665"/>
         <source>VTOL reserved 4</source>
         <translation>VTOL Зарезервирован 4</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2660"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2666"/>
         <source>VTOL reserved 5</source>
         <translation>VTOL Зарезервирован 5</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2661"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2667"/>
         <source>Onboard gimbal</source>
         <translation>Бортовой подвес</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2662"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2668"/>
         <source>Onboard ADSB peripheral</source>
         <translation>Бортовой периферический ADSB</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2671"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2677"/>
         <source>vehicle %1</source>
         <translation>аппарат %1</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2679"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2685"/>
         <source>%1 %2 flight mode</source>
         <translation>%1 %2 режим полета</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2685"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2691"/>
         <source>armed</source>
         <translation>готов</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2685"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2691"/>
         <source>disarmed</source>
         <translation>снят с готовности</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="2949"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="2960"/>
         <source>Vehicle did not respond to command: %1</source>
         <translation>Аппарат не отвеает на команду: %1</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="3187"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3198"/>
         <source>Gyro</source>
         <translation>Гироскоп</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="3188"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3199"/>
         <source>Accelerometer</source>
         <translation>Акселерометр</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="3189"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3200"/>
         <source>Magnetometer</source>
         <translation>Магнетометр</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="3190"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3201"/>
         <source>Absolute pressure</source>
         <translation>Абсолютное давление</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="3191"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3202"/>
         <source>Differential pressure</source>
         <translation>Перепад давления</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="3192"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3203"/>
         <source>GPS</source>
         <translation>GPS</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="3193"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3204"/>
         <source>Optical flow</source>
         <translation>Оптический поток</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="3194"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3205"/>
         <source>Computer vision position</source>
         <translation>Положение компьютерного зрения</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="3195"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3206"/>
         <source>Laser based position</source>
         <translation>Положение по лазеру</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="3196"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3207"/>
         <source>External ground truth</source>
         <translation>Внешнее наземное подтверждение</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="3197"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3208"/>
         <source>Angular rate control</source>
         <translation>Управление угловой скорости</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="3198"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3209"/>
         <source>Attitude stabilization</source>
         <translation>Стабилизация по высоте</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="3199"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3210"/>
         <source>Yaw position</source>
         <translation>Положение курса</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="3200"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3211"/>
         <source>Z/altitude control</source>
         <translation>Контроль высоты по оси Z</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="3201"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3212"/>
         <source>X/Y position control</source>
         <translation>Контроль высоты по осям x/Y</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="3202"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3213"/>
         <source>Motor outputs / control</source>
         <translation>Мотор выходы / контроль</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="3203"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3214"/>
         <source>RC receiver</source>
         <translation>RC приемник</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="3204"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3215"/>
         <source>Gyro 2</source>
         <translation>Гироскоп 2</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="3205"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3216"/>
         <source>Accelerometer 2</source>
         <translation>Акселерометр 2</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="3206"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3217"/>
         <source>Magnetometer 2</source>
         <translation>Магнетометр 2</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="3207"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3218"/>
         <source>GeoFence</source>
         <translation>Геозона</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="3208"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3219"/>
         <source>AHRS</source>
         <translation>AHRS</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="3209"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3220"/>
         <source>Terrain</source>
         <translation>Местность</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="3210"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3221"/>
         <source>Motors reversed</source>
         <translation>Моторы зарезервированы</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="3211"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3222"/>
         <source>Logging</source>
         <translation>Логгирование</translation>
     </message>
     <message>
-        <location filename="../src/Vehicle/Vehicle.cc" line="3212"/>
+        <location filename="../src/Vehicle/Vehicle.cc" line="3223"/>
         <source>Battery</source>
         <translation>Аккумулятор</translation>
     </message>

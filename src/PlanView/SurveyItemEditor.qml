@@ -122,7 +122,7 @@ Rectangle {
             FactCheckBox {
                 text:               qsTr("Hover and capture image")
                 fact:               missionItem.hoverAndCapture
-                visible:            missionItem.hoverAndCaptureAllowed
+                visible:            missionItem.showItem;//hoverAndCaptureAllowed
                 enabled:            !missionItem.followTerrain
                 Layout.columnSpan:  2
                 onClicked: {
@@ -136,6 +136,7 @@ Rectangle {
                 text:               qsTr("Refly at 90 deg offset")
                 fact:               missionItem.refly90Degrees
                 enabled:            !missionItem.followTerrain
+                visible:            missionItem.showItem
                 Layout.columnSpan:  2
             }
 
@@ -143,6 +144,7 @@ Rectangle {
                 text:               qsTr("Images in turnarounds")
                 fact:               missionItem.cameraTriggerInTurnAround
                 enabled:            missionItem.hoverAndCaptureAllowed ? !missionItem.hoverAndCapture.rawValue : true
+                visible:            missionItem.showItem
                 Layout.columnSpan:  2
             }
 
@@ -159,7 +161,7 @@ Rectangle {
                 text:               qsTr("Relative altitude")
                 checked:            missionItem.cameraCalc.distanceToSurfaceRelative
                 enabled:            missionItem.cameraCalc.isManualCamera && !missionItem.followTerrain
-                visible:            QGroundControl.corePlugin.options.showMissionAbsoluteAltitude || (!missionItem.cameraCalc.distanceToSurfaceRelative && !missionItem.followTerrain)
+                visible:            missionItem.showItem//QGroundControl.corePlugin.options.showMissionAbsoluteAltitude || (!missionItem.cameraCalc.distanceToSurfaceRelative && !missionItem.followTerrain)
                 Layout.columnSpan:  2
                 onClicked:          missionItem.cameraCalc.distanceToSurfaceRelative = checked
 

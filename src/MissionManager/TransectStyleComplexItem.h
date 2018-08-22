@@ -39,6 +39,7 @@ public:
     Q_PROPERTY(double           coveredArea                 READ coveredArea                                        NOTIFY coveredAreaChanged)
     Q_PROPERTY(bool             hoverAndCaptureAllowed      READ hoverAndCaptureAllowed                             CONSTANT)
     Q_PROPERTY(QVariantList     visualTransectPoints        READ visualTransectPoints                               NOTIFY visualTransectPointsChanged)
+    Q_PROPERTY(bool             showItem                    READ showItem                                           CONSTANT)
 
     Q_PROPERTY(bool             followTerrain               READ followTerrain              WRITE setFollowTerrain  NOTIFY followTerrainChanged)
     Q_PROPERTY(Fact*            terrainAdjustTolerance      READ terrainAdjustTolerance                             CONSTANT)
@@ -62,6 +63,7 @@ public:
     int             cameraShots             (void) const { return _cameraShots; }
     double          coveredArea             (void) const;
     bool            hoverAndCaptureAllowed  (void) const;
+    bool            showItem                (void) const;
     bool            followTerrain           (void) const { return _followTerrain; }
 
     virtual double  timeBetweenShots        (void) { return 0; } // Most be overridden. Implementation here is needed for unit testing.

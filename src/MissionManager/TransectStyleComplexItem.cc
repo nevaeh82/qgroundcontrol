@@ -108,6 +108,7 @@ TransectStyleComplexItem::TransectStyleComplexItem(Vehicle* vehicle, bool flyVie
     connect(this,                                       &TransectStyleComplexItem::followTerrainChanged, this, &TransectStyleComplexItem::_followTerrainChanged);
 
     setDirty(false);
+    //vehicle->getFact(vehicle->_flightTimeFactName)->;
 }
 
 void TransectStyleComplexItem::_setCameraShots(int cameraShots)
@@ -334,6 +335,11 @@ double TransectStyleComplexItem::_turnaroundDistance(void) const
 bool TransectStyleComplexItem::hoverAndCaptureAllowed(void) const
 {
     return _vehicle->multiRotor() || _vehicle->vtol();
+}
+
+bool TransectStyleComplexItem::showItem() const
+{
+    return false;
 }
 
 void TransectStyleComplexItem::_rebuildTransects(void)
