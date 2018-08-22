@@ -102,7 +102,8 @@ Rectangle {
             FactCheckBox {
                 text:               qsTr("Take images in turnarounds")
                 fact:               missionItem.cameraTriggerInTurnAround
-                enabled:            missionItem.hoverAndCaptureAllowed ? !missionItem.hoverAndCapture.rawValue : true
+                enabled:            missionItem.hoverAndCaptureAllowed ? !missionItem.hoverAndCapture.rawValue : false
+                visible:            missionItem.showItem
                 Layout.columnSpan:  2
             }
 
@@ -111,7 +112,7 @@ Rectangle {
                 text:               qsTr("Relative altitude")
                 checked:            missionItem.cameraCalc.distanceToSurfaceRelative
                 enabled:            missionItem.cameraCalc.isManualCamera && !missionItem.followTerrain
-                visible:            QGroundControl.corePlugin.options.showMissionAbsoluteAltitude || (!missionItem.cameraCalc.distanceToSurfaceRelative && !missionItem.followTerrain)
+                visible:            missionItem.showItem //QGroundControl.corePlugin.options.showMissionAbsoluteAltitude || (!missionItem.cameraCalc.distanceToSurfaceRelative && !missionItem.followTerrain)
                 Layout.alignment:   Qt.AlignLeft
                 Layout.columnSpan:  2
                 onClicked:          missionItem.cameraCalc.distanceToSurfaceRelative = checked

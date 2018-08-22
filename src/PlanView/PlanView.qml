@@ -356,6 +356,7 @@ QGCView {
                 QGCRadioButton {
                     text:           qsTr("Structure Scan")
                     exclusiveGroup: radioGroup
+                    visible:        false
                 }
             }
         }

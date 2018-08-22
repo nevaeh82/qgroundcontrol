@@ -3297,17 +3297,17 @@ propellers on the green thrusters and counter-clockwise propellers on the blue t
     <message>
         <location filename="../src/PlanView/CameraCalc.qml" line="135"/>
         <source>Sensor</source>
-        <translation>Датчик</translation>
+        <translation>Матр</translation>
     </message>
     <message>
         <location filename="../src/PlanView/CameraCalc.qml" line="150"/>
         <source>Image</source>
-        <translation>Изображение</translation>
+        <translation>Изобр</translation>
     </message>
     <message>
         <location filename="../src/PlanView/CameraCalc.qml" line="166"/>
         <source>Focal length</source>
-        <translation>Фокусное расстояние</translation>
+        <translation>Фокус расст</translation>
     </message>
     <message>
         <location filename="../src/PlanView/CameraCalc.qml" line="184"/>
@@ -3708,7 +3708,7 @@ propellers on the green thrusters and counter-clockwise propellers on the blue t
         <location filename="../src/MissionManager/CorridorScanComplexItem.h" line="51"/>
         <location filename="../src/MissionManager/CorridorScanComplexItem.h" line="52"/>
         <source>Corridor Scan</source>
-        <translation>Коридор сканирования</translation>
+        <translation>Лин съемка</translation>
     </message>
     <message>
         <location filename="../src/MissionManager/CorridorScanComplexItem.h" line="53"/>
@@ -3751,7 +3751,7 @@ propellers on the green thrusters and counter-clockwise propellers on the blue t
     <message>
         <location filename="../src/PlanView/CorridorScanEditor.qml" line="96"/>
         <source>Turnaround dist</source>
-        <translation>Дистанция разворота</translation>
+        <translation>Дист разворота</translation>
     </message>
     <message>
         <location filename="../src/PlanView/CorridorScanEditor.qml" line="103"/>
@@ -3796,7 +3796,7 @@ propellers on the green thrusters and counter-clockwise propellers on the blue t
     <message>
         <location filename="../src/PlanView/CorridorScanEditor.qml" line="179"/>
         <source>Statistics</source>
-        <translation>Статистики</translation>
+        <translation>Статистика</translation>
     </message>
 </context>
 <context>
@@ -7394,7 +7394,7 @@ Click the Next button to upload calibration to board. Click Cancel if you don&ap
     <message>
         <location filename="../src/MissionManager/MissionController.cc" line="67"/>
         <source>Corridor Scan</source>
-        <translation>Сканирование корридора</translation>
+        <translation>Лин съемка</translation>
     </message>
     <message>
         <location filename="../src/MissionManager/MissionController.cc" line="220"/>
@@ -9573,12 +9573,12 @@ Is this really what you want?</source>
     <message>
         <location filename="../src/PlanView/PlanView.qml" line="560"/>
         <source>In</source>
-        <translation>В</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../src/PlanView/PlanView.qml" line="564"/>
         <source>Out</source>
-        <translation>Из</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../src/PlanView/PlanView.qml" line="641"/>

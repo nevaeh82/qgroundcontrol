@@ -295,6 +295,8 @@ private:
     static const char*  _jsonComplexItemsKey;
 
     static const int    _missionFileVersion;
+
+    bool                _showStructureScan;
 };
 
 #endif

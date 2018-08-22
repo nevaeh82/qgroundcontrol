@@ -70,6 +70,7 @@ MissionController::MissionController(PlanMasterController* masterController, QOb
     , _currentPlanViewIndex         (-1)
     , _currentPlanViewItem          (NULL)
 {
+    _showStructureScan = false;
     _resetMissionFlightStatus();
     managerVehicleChanged(_managerVehicle);
 }
@@ -1913,11 +1914,14 @@ QStringList MissionController::complexMissionItemNames(void) const
 
     complexItems.append(_surveyMissionItemName);
     complexItems.append(_corridorScanMissionItemName);
-    if (_controllerVehicle->fixedWing()) {
-        complexItems.append(_fwLandingMissionItemName);
-    }
-    if (_controllerVehicle->multiRotor() || _controllerVehicle->vtol()) {
-        complexItems.append(_structureScanMissionItemName);
+    if(_showStructureScan)
+    {
+        if (_controllerVehicle->fixedWing()) {
+            complexItems.append(_fwLandingMissionItemName);
+        }
+        if (_controllerVehicle->multiRotor() || _controllerVehicle->vtol()) {
+            complexItems.append(_structureScanMissionItemName);
+        }
     }
 
     return complexItems;
