@@ -402,6 +402,12 @@ int MissionController::insertROIMissionItem(QGeoCoordinate coordinate, int i)
 
 int MissionController::insertComplexMissionItem(QString itemName, QGeoCoordinate mapCenterCoordinate, int i)
 {
+    if(i == 1)
+    {
+        int sec = insertSimpleMissionItem(_settingsItem->coordinate(), 1);
+    }
+
+
     ComplexMissionItem* newItem;
 
     int sequenceNumber = _nextSequenceNumber();
@@ -419,7 +425,8 @@ int MissionController::insertComplexMissionItem(QString itemName, QGeoCoordinate
         return sequenceNumber;
     }
 
-    return _insertComplexMissionItemWorker(newItem, i);
+    return _insertComplexMissionItemWorker(newItem, i+1);
+//    return sec;
 }
 
 int MissionController::insertComplexMissionItemFromKML(QString itemName, QString kmlFile, int i)
