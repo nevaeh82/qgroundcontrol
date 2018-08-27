@@ -90,7 +90,7 @@ Column {
 
                 QGCRadioButton {
                     width:          _editFieldWidth
-                    text:           "Landscape"
+                    text:           qsTr("Landscape")
                     checked:        !!cameraCalc.landscape.value
                     exclusiveGroup: cameraOrientationGroup
                     onClicked:      cameraCalc.landscape.value = 1
@@ -98,7 +98,7 @@ Column {
 
                 QGCRadioButton {
                     id:             cameraOrientationPortrait
-                    text:           "Portrait"
+                    text:           qsTr("Portrait")
                     checked:        !cameraCalc.landscape.value
                     exclusiveGroup: cameraOrientationGroup
                     onClicked:      cameraCalc.landscape.value = 0
@@ -204,12 +204,12 @@ Column {
                 }
             }
 
-            QGCLabel {
+            /*QGCLabel {
                 wrapMode:               Text.WordWrap
                 text:                   qsTr("Select one:")
                 Layout.preferredWidth:  parent.width
                 Layout.columnSpan:      2
-            }
+            }*/
 
             GridLayout {
                 anchors.left:   parent.left

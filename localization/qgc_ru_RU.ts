@@ -3285,6 +3285,16 @@ propellers on the green thrusters and counter-clockwise propellers on the blue t
         <translation>Камера</translation>
     </message>
     <message>
+        <location filename="../src/PlanView/CameraCalc.qml" line="93"/>
+        <source>Landscape</source>
+        <translation>Альбом</translation>
+    </message>
+    <message>
+        <location filename="../src/PlanView/CameraCalc.qml" line="101"/>
+        <source>Portrait</source>
+        <translation>Книга</translation>
+    </message>
+    <message>
         <location filename="../src/PlanView/CameraCalc.qml" line="123"/>
         <source>Width</source>
         <translation>Ширина</translation>
@@ -3325,9 +3335,8 @@ propellers on the green thrusters and counter-clockwise propellers on the blue t
         <translation>Перекр</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/CameraCalc.qml" line="209"/>
         <source>Select one:</source>
-        <translation></translation>
+        <translation type="vanished">Выберите:</translation>
     </message>
     <message>
         <location filename="../src/PlanView/CameraCalc.qml" line="237"/>
@@ -3759,42 +3768,42 @@ propellers on the green thrusters and counter-clockwise propellers on the blue t
         <translation>Сделать снимок в развороте</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/CorridorScanEditor.qml" line="111"/>
+        <location filename="../src/PlanView/CorridorScanEditor.qml" line="112"/>
         <source>Relative altitude</source>
         <translation>Относительная высота</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/CorridorScanEditor.qml" line="127"/>
+        <location filename="../src/PlanView/CorridorScanEditor.qml" line="128"/>
         <source>Rotate Entry Point</source>
         <translation>Поворот точки входа</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/CorridorScanEditor.qml" line="133"/>
+        <location filename="../src/PlanView/CorridorScanEditor.qml" line="134"/>
         <source>Terrain</source>
         <translation>Местность</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/CorridorScanEditor.qml" line="145"/>
+        <location filename="../src/PlanView/CorridorScanEditor.qml" line="146"/>
         <source>Vehicle follows terrain</source>
         <translation>Аппарат следует рельефу</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/CorridorScanEditor.qml" line="157"/>
+        <location filename="../src/PlanView/CorridorScanEditor.qml" line="158"/>
         <source>Tolerance</source>
         <translation>Допустимое отклонение</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/CorridorScanEditor.qml" line="163"/>
+        <location filename="../src/PlanView/CorridorScanEditor.qml" line="164"/>
         <source>Max Climb Rate</source>
-        <translation>Макс скорость подъема</translation>
+        <translation>Макс ск подъема</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/CorridorScanEditor.qml" line="169"/>
+        <location filename="../src/PlanView/CorridorScanEditor.qml" line="170"/>
         <source>Max Descent Rate</source>
-        <translation>Макс скорость спуска</translation>
+        <translation>Макс ск спуска</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/CorridorScanEditor.qml" line="179"/>
+        <location filename="../src/PlanView/CorridorScanEditor.qml" line="180"/>
         <source>Statistics</source>
         <translation>Статистика</translation>
     </message>
@@ -6012,7 +6021,7 @@ propellers on the green thrusters and counter-clockwise propellers on the blue t
     <message>
         <location filename="../src/FlightDisplay/GuidedActionsController.qml" line="68"/>
         <source>Orbit the vehicle around the specified location.</source>
-        <translation>Вращать аппарат вокруг указанного места</translation>
+        <translation>Вращать аппарат вокруг указанного места.</translation>
     </message>
     <message>
         <source>Orbit the vehicle around the specified location. Warning: WORK IN PROGRESS!</source>
@@ -7397,44 +7406,44 @@ Click the Next button to upload calibration to board. Click Cancel if you don&ap
         <translation>Лин съемка</translation>
     </message>
     <message>
-        <location filename="../src/MissionManager/MissionController.cc" line="220"/>
+        <location filename="../src/MissionManager/MissionController.cc" line="221"/>
         <source>Warning: You are using MAV_FRAME_GLOBAL_TERRAIN_ALT in a mission. %1 does not support sending terrain tiles to vehicle.</source>
         <translation>Внимание: вы используете MAV_FRAME_GLOBAL_TERRAIN_ALT в миссии. %1 не поддерживает отправку тайлов подстилающей поверхности в аппарат.</translation>
     </message>
     <message>
-        <location filename="../src/MissionManager/MissionController.cc" line="695"/>
+        <location filename="../src/MissionManager/MissionController.cc" line="703"/>
         <source>Mission item %1 is not an object</source>
         <translation>Элемент миссии %1 не объект</translation>
     </message>
     <message>
-        <location filename="../src/MissionManager/MissionController.cc" line="774"/>
+        <location filename="../src/MissionManager/MissionController.cc" line="782"/>
         <source>Unsupported complex item type: %1</source>
         <translation>Неподдерживаемый тип сложных элементов: %1</translation>
     </message>
     <message>
-        <location filename="../src/MissionManager/MissionController.cc" line="777"/>
+        <location filename="../src/MissionManager/MissionController.cc" line="785"/>
         <source>Unknown item type: %1</source>
         <translation>Неизвестный тип элемента: %1</translation>
     </message>
     <message>
-        <location filename="../src/MissionManager/MissionController.cc" line="800"/>
+        <location filename="../src/MissionManager/MissionController.cc" line="808"/>
         <source>Could not find doJumpId: %1</source>
         <translation>Не удалось найти doJumpId: %1</translation>
     </message>
     <message>
-        <location filename="../src/MissionManager/MissionController.cc" line="869"/>
+        <location filename="../src/MissionManager/MissionController.cc" line="877"/>
         <source>The mission file is corrupted.</source>
         <translation>Файл миссии поврежден.</translation>
     </message>
     <message>
-        <location filename="../src/MissionManager/MissionController.cc" line="874"/>
+        <location filename="../src/MissionManager/MissionController.cc" line="882"/>
         <source>The mission file is not compatible with this version of %1.</source>
         <translation>Файл миссии не совместим с этой версией %1.</translation>
     </message>
     <message>
-        <location filename="../src/MissionManager/MissionController.cc" line="913"/>
-        <location filename="../src/MissionManager/MissionController.cc" line="928"/>
-        <location filename="../src/MissionManager/MissionController.cc" line="952"/>
+        <location filename="../src/MissionManager/MissionController.cc" line="921"/>
+        <location filename="../src/MissionManager/MissionController.cc" line="936"/>
+        <location filename="../src/MissionManager/MissionController.cc" line="960"/>
         <source>Mission: %1</source>
         <translation>Миссия: %1</translation>
     </message>
@@ -9536,117 +9545,117 @@ Is this really what you want?</source>
         <translation>Структурное сканирование</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/PlanView.qml" line="387"/>
+        <location filename="../src/PlanView/PlanView.qml" line="388"/>
         <source>Move the selected mission item to the be after following mission item:</source>
         <translation>Переместить выбранный элемент миссии за элемент следующей миссии:</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/PlanView.qml" line="521"/>
+        <location filename="../src/PlanView/PlanView.qml" line="522"/>
         <source>Plan</source>
         <translation>План</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/PlanView.qml" line="534"/>
+        <location filename="../src/PlanView/PlanView.qml" line="535"/>
         <source>File</source>
         <translation>Файл</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/PlanView.qml" line="540"/>
+        <location filename="../src/PlanView/PlanView.qml" line="541"/>
         <source>Waypoint</source>
         <translation>Точка</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/PlanView.qml" line="545"/>
+        <location filename="../src/PlanView/PlanView.qml" line="546"/>
         <source>ROI</source>
         <translation>ROI</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/PlanView.qml" line="550"/>
+        <location filename="../src/PlanView/PlanView.qml" line="551"/>
         <source>Pattern</source>
         <translation>Задание</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/PlanView.qml" line="555"/>
+        <location filename="../src/PlanView/PlanView.qml" line="556"/>
         <source>Center</source>
         <translation>Центр</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/PlanView.qml" line="560"/>
+        <location filename="../src/PlanView/PlanView.qml" line="561"/>
         <source>In</source>
-        <translation></translation>
+        <translation> </translation>
     </message>
     <message>
-        <location filename="../src/PlanView/PlanView.qml" line="564"/>
+        <location filename="../src/PlanView/PlanView.qml" line="565"/>
         <source>Out</source>
-        <translation></translation>
+        <translation> </translation>
     </message>
     <message>
-        <location filename="../src/PlanView/PlanView.qml" line="641"/>
+        <location filename="../src/PlanView/PlanView.qml" line="642"/>
         <source>Mission</source>
         <translation>Миссия</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/PlanView.qml" line="653"/>
+        <location filename="../src/PlanView/PlanView.qml" line="654"/>
         <source>Fence</source>
         <translation>Забор</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/PlanView.qml" line="664"/>
+        <location filename="../src/PlanView/PlanView.qml" line="665"/>
         <source>Rally</source>
         <translation>Ралли</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/PlanView.qml" line="778"/>
+        <location filename="../src/PlanView/PlanView.qml" line="779"/>
         <source>You have unsaved/unsent changes. Loading from the Vehicle will lose these changes. Are you sure you want to load from the Vehicle?</source>
         <translation>У вас есть несохраненные/неотправленные изменения. Загрузка из аппарата приведет к потере этих изменений. Вы уверены, что вы хотите загрузить из аппарата?</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/PlanView.qml" line="790"/>
+        <location filename="../src/PlanView/PlanView.qml" line="791"/>
         <source>You have unsaved/unsent changes. Loading from a file will lose these changes. Are you sure you want to load from a file?</source>
         <translation>У вас есть несохраненные/неотправленные изменения. Загрузка из файла приведет к потере этих изменений. Вы уверены, что вы хотите загрузить из файла?</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/PlanView.qml" line="801"/>
+        <location filename="../src/PlanView/PlanView.qml" line="802"/>
         <source>Are you sure you want to remove all items and create a new plan? </source>
         <translation>Вы уверены, что хотите удалить все элементы и создать новый план? </translation>
     </message>
     <message>
-        <location filename="../src/PlanView/PlanView.qml" line="875"/>
+        <location filename="../src/PlanView/PlanView.qml" line="876"/>
         <source>You have unsaved changes.</source>
         <translation>Вы не сохранили изменения.</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/PlanView.qml" line="877"/>
+        <location filename="../src/PlanView/PlanView.qml" line="878"/>
         <source>Plan File:</source>
         <translation>Файл плана:</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/PlanView.qml" line="888"/>
+        <location filename="../src/PlanView/PlanView.qml" line="889"/>
         <source>New...</source>
         <translation>Новый...</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/PlanView.qml" line="893"/>
+        <location filename="../src/PlanView/PlanView.qml" line="894"/>
         <source>New Plan</source>
         <translation>Новый план</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/PlanView.qml" line="898"/>
+        <location filename="../src/PlanView/PlanView.qml" line="899"/>
         <source>Open...</source>
         <translation>Открыть...</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/PlanView.qml" line="912"/>
+        <location filename="../src/PlanView/PlanView.qml" line="913"/>
         <source>Save</source>
         <translation>Сохранить</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/PlanView.qml" line="926"/>
+        <location filename="../src/PlanView/PlanView.qml" line="927"/>
         <source>Save As...</source>
         <translation>Сохранить как...</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/PlanView.qml" line="998"/>
+        <location filename="../src/PlanView/PlanView.qml" line="999"/>
         <source>Clear Vehicle Mission</source>
         <translation>Очистить миссию аппарата</translation>
     </message>
@@ -9655,37 +9664,37 @@ Is this really what you want?</source>
         <translation type="vanished">Вы уверены, что хотите удалить все элементы? </translation>
     </message>
     <message>
-        <location filename="../src/PlanView/PlanView.qml" line="802"/>
+        <location filename="../src/PlanView/PlanView.qml" line="803"/>
         <source>This will also remove all items from the vehicle.</source>
         <translation>Это также удалит все элементы из аппарата.</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/PlanView.qml" line="817"/>
+        <location filename="../src/PlanView/PlanView.qml" line="818"/>
         <source>Are you sure you want to remove all mission items and clear the mission from the vehicle?</source>
         <translation>Вы уверены, что хотите удалить все элементы миссии и очистить миссию на аппарате?</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/PlanView.qml" line="842"/>
+        <location filename="../src/PlanView/PlanView.qml" line="843"/>
         <source>Create complex pattern:</source>
         <translation>Создать сложный шаблон:</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/PlanView.qml" line="867"/>
+        <location filename="../src/PlanView/PlanView.qml" line="868"/>
         <source>Mission overwrite</source>
         <translation>Перезапись миссии</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/PlanView.qml" line="867"/>
+        <location filename="../src/PlanView/PlanView.qml" line="868"/>
         <source>GeoFence overwrite</source>
         <translation>GeoFence перезапись</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/PlanView.qml" line="867"/>
+        <location filename="../src/PlanView/PlanView.qml" line="868"/>
         <source>Rally Points overwrite</source>
         <translation>Перезапись точек ралли</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/PlanView.qml" line="874"/>
+        <location filename="../src/PlanView/PlanView.qml" line="875"/>
         <source>You have unsaved changes. You should upload to your vehicle, or save to a file:</source>
         <translation>У вас есть несохраненные изменения. Вам следует загрузить их на аппарат или сохранить в файл:</translation>
     </message>
@@ -9694,12 +9703,12 @@ Is this really what you want?</source>
         <translation type="vanished">Синхронизация:</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/PlanView.qml" line="972"/>
+        <location filename="../src/PlanView/PlanView.qml" line="973"/>
         <source>Upload</source>
         <translation>Загрузка</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/PlanView.qml" line="983"/>
+        <location filename="../src/PlanView/PlanView.qml" line="984"/>
         <source>Download</source>
         <translation>Скачивание</translation>
     </message>
@@ -9712,7 +9721,7 @@ Is this really what you want?</source>
         <translation type="vanished">Удалить все</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/PlanView.qml" line="947"/>
+        <location filename="../src/PlanView/PlanView.qml" line="948"/>
         <source>Save KML...</source>
         <translation>Сохранить KML...</translation>
     </message>
@@ -9725,12 +9734,12 @@ Is this really what you want?</source>
         <translation type="vanished">Загрузить План...</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/PlanView.qml" line="936"/>
+        <location filename="../src/PlanView/PlanView.qml" line="937"/>
         <source>Load KML...</source>
         <translation>Загрузить KML...</translation>
     </message>
     <message>
-        <location filename="../src/PlanView/PlanView.qml" line="953"/>
+        <location filename="../src/PlanView/PlanView.qml" line="954"/>
         <source>KML</source>
         <translation>KML</translation>
     </message>
@@ -13327,12 +13336,12 @@ Abs Alt </source>
     <message>
         <location filename="../src/PlanView/SurveyItemEditor.qml" line="207"/>
         <source>Max Climb Rate</source>
-        <translation>Макс скорость подъема</translation>
+        <translation>Макс ск подъема</translation>
     </message>
     <message>
         <location filename="../src/PlanView/SurveyItemEditor.qml" line="213"/>
         <source>Max Descent Rate</source>
-        <translation>Макс скорость спуска</translation>
+        <translation>Макс ск спуска</translation>
     </message>
     <message>
         <location filename="../src/PlanView/SurveyItemEditor.qml" line="223"/>
@@ -13456,12 +13465,12 @@ Abs Alt </source>
 <context>
     <name>TransectStyleComplexItem</name>
     <message>
-        <location filename="../src/MissionManager/TransectStyleComplexItem.cc" line="201"/>
+        <location filename="../src/MissionManager/TransectStyleComplexItem.cc" line="202"/>
         <source>TransectStyleComplexItem version %2 not supported</source>
         <translation>Версия TransectStyleComplexItem %2 не поддерживается</translation>
     </message>
     <message>
-        <location filename="../src/MissionManager/TransectStyleComplexItem.cc" line="457"/>
+        <location filename="../src/MissionManager/TransectStyleComplexItem.cc" line="458"/>
         <source>INTERNAL ERROR: TransectStyleComplexItem::_adjustTransectPointsForTerrain called when terrain data not ready. Plan will be incorrect.</source>
         <translation>ВНУТРЕННЯЯ ОШИБКА: TransectStyleComplexItem::_adjustTransectPointsForTerrain вызван, когда данные местности не были готовы. План будет не коррентным.</translation>
     </message>
@@ -13482,17 +13491,17 @@ Abs Alt </source>
     <message>
         <location filename="../src/PlanView/TransectStyleComplexItemStats.qml" line="19"/>
         <source>Survey Area</source>
-        <translation>Площадная съемка</translation>
+        <translation>Площ съемка</translation>
     </message>
     <message>
         <location filename="../src/PlanView/TransectStyleComplexItemStats.qml" line="22"/>
         <source>Photo Count</source>
-        <translation>Количество снимков</translation>
+        <translation>Кол снимков</translation>
     </message>
     <message>
         <location filename="../src/PlanView/TransectStyleComplexItemStats.qml" line="25"/>
         <source>Photo Interval</source>
-        <translation>Интервал снимков</translation>
+        <translation>Интервал фото</translation>
     </message>
     <message>
         <location filename="../src/PlanView/TransectStyleComplexItemStats.qml" line="26"/>
@@ -13502,12 +13511,17 @@ Abs Alt </source>
     <message>
         <location filename="../src/PlanView/TransectStyleComplexItemStats.qml" line="28"/>
         <source>Trigger Distance</source>
-        <translation>Триггер расстояния</translation>
+        <translation>Триггер расст</translation>
     </message>
     <message>
         <location filename="../src/PlanView/TransectStyleComplexItemStats.qml" line="31"/>
         <source>Flight time</source>
-        <translation>Время полета</translation>
+        <translation>Вр полета</translation>
+    </message>
+    <message>
+        <location filename="../src/PlanView/TransectStyleComplexItemStats.qml" line="32"/>
+        <source>min</source>
+        <translation>мин</translation>
     </message>
 </context>
 <context>

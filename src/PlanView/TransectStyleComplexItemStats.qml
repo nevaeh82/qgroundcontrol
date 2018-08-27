@@ -28,7 +28,7 @@ Grid {
     QGCLabel { text: qsTr("Trigger Distance") }
     QGCLabel { text: missionItem.cameraCalc.adjustedFootprintFrontal.valueString + " " + missionItem.cameraCalc.adjustedFootprintFrontal.units }
 
-//    QGCLabel { text: qsTr("Flight time") }
-//    QGCLabel { text: "0.0" }//missionItem.cameraCalc.adjustedFootprintFrontal.valueString + " " + missionItem.cameraCalc.adjustedFootprintFrontal.units }
+    QGCLabel { text: qsTr("Flight time") }
+    QGCLabel { text: (missionItem.cameraShots * missionItem.timeBetweenShots.toFixed(1) / 60).toFixed(1) + " " + qsTr("min") }//missionItem.cameraCalc.adjustedFootprintFrontal.valueString + " " + missionItem.cameraCalc.adjustedFootprintFrontal.units }
 
 }
