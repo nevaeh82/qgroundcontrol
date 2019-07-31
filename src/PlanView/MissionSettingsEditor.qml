@@ -37,9 +37,13 @@ Rectangle {
     property var    _fileExtension:                 QGroundControl.settingsManager.appSettings.missionFileExtension
     property var    _appSettings:                   QGroundControl.settingsManager.appSettings
     property bool   _waypointsOnlyMode:             QGroundControl.corePlugin.options.missionWaypointsOnly
-    property bool   _showCameraSection:             !_waypointsOnlyMode || QGroundControl.corePlugin.showAdvancedUI
+    property bool   _showCameraSection:             (_waypointsOnlyMode || QGroundControl.corePlugin.showAdvancedUI) && !_missionVehicle.apmFirmware
     property bool   _simpleMissionStart:            QGroundControl.corePlugin.options.showSimpleMissionStart
+<<<<<<< HEAD
     property MissionSettingsItem missionItem: null
+=======
+    property bool   _showFlightSpeed:               !_missionVehicle.vtol && !_simpleMissionStart && !_missionVehicle.apmFirmware
+>>>>>>> c9948d19e34243e5717857b24b5a91edc543a9b8
 
     readonly property string _firmwareLabel:    qsTr("Firmware")
     readonly property string _vehicleLabel:     qsTr("Vehicle")
@@ -89,14 +93,14 @@ Rectangle {
             QGCCheckBox {
                 id:         flightSpeedCheckBox
                 text:       qsTr("Flight speed")
-                visible:    !_missionVehicle.vtol && !_simpleMissionStart
+                visible:    _showFlightSpeed
                 checked:    missionItem.speedSection.specifyFlightSpeed
                 onClicked:   missionItem.speedSection.specifyFlightSpeed = checked
             }
             FactTextField {
                 Layout.fillWidth:   true
                 fact:               missionItem.speedSection.flightSpeed
-                visible:            flightSpeedCheckBox.visible
+                visible:            _showFlightSpeed
                 enabled:            flightSpeedCheckBox.checked
             }
         }
@@ -109,7 +113,7 @@ Rectangle {
 
             CameraSection {
                 id:         cameraSection
-                checked:    missionItem.cameraSection.settingsSpecified
+                checked:    !_waypointsOnlyMode && missionItem.cameraSection.settingsSpecified
                 visible:    _showCameraSection
             }
 

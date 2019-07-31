@@ -68,6 +68,7 @@ public:
     Q_PROPERTY(double           missionVehicleYaw                   READ missionVehicleYaw                                              NOTIFY missionVehicleYawChanged)                    ///< Expected vehicle yaw at this point in mission
     Q_PROPERTY(bool             flyView                             READ flyView                                                        CONSTANT)
 
+    Q_PROPERTY(QGCGeoBoundingCube* boundingCube                     READ boundingCube                                                   NOTIFY boundingCubeChanged)
 
     // The following properties are calculated/set by the MissionController recalc methods
 
@@ -123,6 +124,9 @@ public:
     virtual double          specifiedFlightSpeed    (void) = 0;
     virtual double          specifiedGimbalYaw      (void) = 0;
     virtual double          specifiedGimbalPitch    (void) = 0;
+
+    //-- Default implementation returns an invalid bounding cube
+    virtual QGCGeoBoundingCube* boundingCube        (void) { return &_boundingCube; }
 
     /// Update item to mission flight status at point where this item appears in mission.
     /// IMPORTANT: Overrides must call base class implementation
@@ -195,6 +199,7 @@ signals:
     void missionVehicleYawChanged       (double missionVehicleYaw);
     void terrainAltitudeChanged         (double terrainAltitude);
     void additionalTimeDelayChanged     (void);
+    void boundingCubeChanged            (void);
 
     void coordinateHasRelativeAltitudeChanged       (bool coordinateHasRelativeAltitude);
     void exitCoordinateHasRelativeAltitudeChanged   (bool exitCoordinateHasRelativeAltitude);
@@ -219,10 +224,15 @@ protected:
     double      _missionGimbalYaw;
     double      _missionVehicleYaw;
 
+    QGCGeoBoundingCube  _boundingCube;      ///< The bounding "cube" of this element.
+
     MissionController::MissionFlightStatus_t    _missionFlightStatus;
 
     /// This is used to reference any subsequent mission items which do not specify a coordinate.
     QmlObjectListModel  _childItems;
+
+protected:
+    void    _setBoundingCube                (QGCGeoBoundingCube bc);
 
 private slots:
     void _updateTerrainAltitude (void);

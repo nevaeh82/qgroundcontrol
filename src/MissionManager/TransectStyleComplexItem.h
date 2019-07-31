@@ -55,8 +55,8 @@ public:
     Fact* hoverAndCapture               (void) { return &_hoverAndCaptureFact; }
     Fact* refly90Degrees                (void) { return &_refly90DegreesFact; }
     Fact* terrainAdjustTolerance        (void) { return &_terrainAdjustToleranceFact; }
-    Fact* terrainAdjustMaxDescentRate   (void) { return &_terrainAdjustMaxClimbRateFact; }
-    Fact* terrainAdjustMaxClimbRate     (void) { return &_terrainAdjustMaxDescentRateFact; }
+    Fact* terrainAdjustMaxDescentRate   (void) { return &_terrainAdjustMaxDescentRateFact; }
+    Fact* terrainAdjustMaxClimbRate     (void) { return &_terrainAdjustMaxClimbRateFact; }
 
     const Fact* hoverAndCapture         (void) const { return &_hoverAndCaptureFact; }
 
@@ -76,9 +76,9 @@ public:
 
     // Overrides from ComplexMissionItem
 
-    int             lastSequenceNumber  (void) const final;
-    QString         mapVisualQML        (void) const override = 0;
-    bool            load                (const QJsonObject& complexObject, int sequenceNumber, QString& errorString) override = 0;
+    int                 lastSequenceNumber  (void) const final;
+    QString             mapVisualQML        (void) const override = 0;
+    bool                load                (const QJsonObject& complexObject, int sequenceNumber, QString& errorString) override = 0;
 
     double          complexDistance     (void) const final { return _complexDistance; }
     double          greatestDistanceTo  (const QGeoCoordinate &other) const final;
@@ -131,9 +131,6 @@ signals:
     void followTerrainChanged           (bool followTerrain);
 
 protected slots:
-    virtual void _rebuildTransectsPhase1    (void) = 0; ///< Rebuilds the _transects array
-    virtual void _rebuildTransectsPhase2    (void) = 0; ///< Adjust values associated with _transects array
-
     void _setDirty                          (void);
     void _setIfDirty                        (bool dirty);
     void _updateCoordinateAltitudes         (void);
@@ -141,6 +138,10 @@ protected slots:
     void _rebuildTransects                  (void);
 
 protected:
+    virtual void _rebuildTransectsPhase1    (void) = 0; ///< Rebuilds the _transects array
+    virtual void _recalcComplexDistance     (void) = 0;
+    virtual void _recalcCameraShots         (void) = 0;
+
     void    _save                           (QJsonObject& saveObject);
     bool    _load                           (const QJsonObject& complexObject, QString& errorString);
     void    _setExitCoordinate              (const QGeoCoordinate& coordinate);
@@ -149,11 +150,10 @@ protected:
     bool    _hasTurnaround                  (void) const;
     double  _turnaroundDistance             (void) const;
 
-    int             _sequenceNumber;
-    bool            _dirty;
-    QGeoCoordinate  _coordinate;
-    QGeoCoordinate  _exitCoordinate;
-    QGCMapPolygon   _surveyAreaPolygon;
+    int                 _sequenceNumber;
+    QGeoCoordinate      _coordinate;
+    QGeoCoordinate      _exitCoordinate;
+    QGCMapPolygon       _surveyAreaPolygon;
 
     enum CoordType {
         CoordTypeInterior,              ///< Interior waypoint for flight path only
@@ -200,6 +200,7 @@ protected:
     static const char* _jsonVisualTransectPointsKey;
     static const char* _jsonItemsKey;
     static const char* _jsonFollowTerrainKey;
+    static const char* _jsonCameraShotsKey;
 
     static const int _terrainQueryTimeoutMsecs;
 

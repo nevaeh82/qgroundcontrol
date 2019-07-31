@@ -1,6 +1,6 @@
 /****************************************************************************
  *
- *   (c) 2009-2016 QGROUNDCONTROL PROJECT <http://www.qgroundcontrol.org>
+ *   (c) 2009-2018 QGROUNDCONTROL PROJECT <http://www.qgroundcontrol.org>
  *
  * QGroundControl is licensed according to the terms in the file
  * COPYING.md in the root of the source code directory.
@@ -14,11 +14,12 @@
  *   @author Gus Grubba <mavlink@grubba.com>
  */
 
-#ifndef VIDEO_ITEM_H
-#define VIDEO_ITEM_H
+#pragma once
 
 #include <QtQuick/QQuickItem>
 #include "VideoSurface.h"
+
+class QSGGeometry;
 
 class VideoItem : public QQuickItem
 {
@@ -41,9 +42,10 @@ protected:
 
 private:
 #if defined(QGC_GST_STREAMING)
+	QSGGeometry* _createDefaultGeometry(QRectF& rectBound);
+	
     struct Private;
     Private* const _data;
 #endif
 };
 
-#endif // VIDEO_ITEM_H

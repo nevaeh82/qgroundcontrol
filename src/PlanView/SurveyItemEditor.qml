@@ -9,6 +9,7 @@ import QGroundControl               1.0
 import QGroundControl.ScreenTools   1.0
 import QGroundControl.Vehicle       1.0
 import QGroundControl.Controls      1.0
+import QGroundControl.FactSystem    1.0
 import QGroundControl.FactControls  1.0
 import QGroundControl.Palette       1.0
 import QGroundControl.FlightMap     1.0
@@ -79,7 +80,6 @@ Rectangle {
         }
 
         GridLayout {
-            id:             transectsGrid
             anchors.left:   parent.left
             anchors.right:  parent.right
             columnSpacing:  _margin
@@ -93,6 +93,7 @@ Rectangle {
                 Layout.fillWidth:       true
                 onUpdated:              angleSlider.value = missionItem.gridAngle.value
             }
+
             QGCSlider {
                 id:                     angleSlider
                 minimumValue:           0
@@ -112,19 +113,34 @@ Rectangle {
                 fact:               missionItem.turnAroundDistance
                 Layout.fillWidth:   true
             }
+        }
+
+        ColumnLayout {
+            anchors.left:   parent.left
+            anchors.right:  parent.right
+            spacing:        _margin
+            visible:        transectsHeader.checked
 
             QGCButton {
-                Layout.columnSpan:  2
                 text:               qsTr("Rotate Entry Point")
                 onClicked:          missionItem.rotateEntryPoint();
             }
+
+            /*
+              Temporarily removed due to bug https://github.com/mavlink/qgroundcontrol/issues/7005
+            FactCheckBox {
+                text:       qsTr("Split concave polygons")
+                fact:       _splitConcave
+                visible:    _splitConcave.visible
+                property Fact _splitConcave: missionItem.splitConcavePolygons
+            }
+            */
 
             FactCheckBox {
                 text:               qsTr("Hover and capture image")
                 fact:               missionItem.hoverAndCapture
                 visible:            missionItem.showItem;//hoverAndCaptureAllowed
                 enabled:            !missionItem.followTerrain
-                Layout.columnSpan:  2
                 onClicked: {
                     if (checked) {
                         missionItem.cameraTriggerInTurnAround.rawValue = false
@@ -136,23 +152,28 @@ Rectangle {
                 text:               qsTr("Refly at 90 deg offset")
                 fact:               missionItem.refly90Degrees
                 enabled:            !missionItem.followTerrain
+<<<<<<< HEAD
                 visible:            missionItem.showItem
                 Layout.columnSpan:  2
+=======
+>>>>>>> c9948d19e34243e5717857b24b5a91edc543a9b8
             }
 
             FactCheckBox {
                 text:               qsTr("Images in turnarounds")
                 fact:               missionItem.cameraTriggerInTurnAround
                 enabled:            missionItem.hoverAndCaptureAllowed ? !missionItem.hoverAndCapture.rawValue : true
+<<<<<<< HEAD
                 visible:            missionItem.showItem
                 Layout.columnSpan:  2
+=======
+>>>>>>> c9948d19e34243e5717857b24b5a91edc543a9b8
             }
 
             FactCheckBox {
                 text:               qsTr("Fly alternate transects")
                 fact:               missionItem.flyAlternateTransects
                 visible:            _vehicle.fixedWing || _vehicle.vtol
-                Layout.columnSpan:  2
             }
 
             QGCCheckBox {
@@ -161,8 +182,12 @@ Rectangle {
                 text:               qsTr("Relative altitude")
                 checked:            missionItem.cameraCalc.distanceToSurfaceRelative
                 enabled:            missionItem.cameraCalc.isManualCamera && !missionItem.followTerrain
+<<<<<<< HEAD
                 visible:            missionItem.showItem//QGroundControl.corePlugin.options.showMissionAbsoluteAltitude || (!missionItem.cameraCalc.distanceToSurfaceRelative && !missionItem.followTerrain)
                 Layout.columnSpan:  2
+=======
+                visible:            QGroundControl.corePlugin.options.showMissionAbsoluteAltitude || (!missionItem.cameraCalc.distanceToSurfaceRelative && !missionItem.followTerrain)
+>>>>>>> c9948d19e34243e5717857b24b5a91edc543a9b8
                 onClicked:          missionItem.cameraCalc.distanceToSurfaceRelative = checked
 
                 Connections {

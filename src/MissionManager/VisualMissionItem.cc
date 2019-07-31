@@ -45,7 +45,7 @@ VisualMissionItem::VisualMissionItem(Vehicle* vehicle, bool flyView, QObject* pa
 
 VisualMissionItem::VisualMissionItem(const VisualMissionItem& other, bool flyView, QObject* parent)
     : QObject                   (parent)
-    , _vehicle                  (NULL)
+    , _vehicle                  (nullptr)
     , _flyView                  (flyView)
     , _isCurrentItem            (false)
     , _dirty                    (false)
@@ -206,3 +206,10 @@ void VisualMissionItem::_terrainDataReceived(bool success, QList<double> heights
     sender()->deleteLater();
 }
 
+void VisualMissionItem::_setBoundingCube(QGCGeoBoundingCube bc)
+{
+    if (bc != _boundingCube) {
+        _boundingCube = bc;
+        emit boundingCubeChanged();
+    }
+}
