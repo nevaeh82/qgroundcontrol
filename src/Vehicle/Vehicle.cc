@@ -551,12 +551,6 @@ void Vehicle::prepareDelete()
     }
 }
 
-void Vehicle::showAdvancedUI(bool state)
-{
-    //QGCCorePlugin::setShowAdvancedUI(state);
-
-}
-
 void Vehicle::_offlineFirmwareTypeSettingChanged(QVariant value)
 {
     _firmwareType = static_cast<MAV_AUTOPILOT>(value.toInt());

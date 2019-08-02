@@ -352,6 +352,7 @@ INCLUDEPATH += \
     src/FollowMe \
     src/GPS \
     src/Joystick \
+    src/PlanView \
     src/MissionManager \
     src/PositionManager \
     src/QmlControls \
